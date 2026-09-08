@@ -626,7 +626,7 @@ section { padding: 0; }
 .prose p { margin-bottom: 16px; }
 main { text-align: justify; hyphens: auto; }
 main h1, main h2, main h3, main h4,
-.pub-title, .section-title, .nav-links, .card-foot, .stats, .person { text-align: left; }
+.pub-title, .section-title, .nav-links, .card-foot, .stats { text-align: left; }
 main .lab-hero,
 main .lab-hero > div,
 main .lab-hero h1,
