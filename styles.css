@@ -177,7 +177,7 @@ section { padding: 0; }
     height: auto;
 }
 .footer-brand.wordmark .brand-logo { width: 132px; }
-:root[data-theme="dark"] .brand-logo { content: url("assets/logo/Logo-dark.png"); }
+:root[data-theme="dark"] .brand-logo { content: url("assets/logo/Logo-dark.svg"); }
 .nav-links {
     display: flex;
     gap: 22px;
