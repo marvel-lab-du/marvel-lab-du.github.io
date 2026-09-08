@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" role="img" aria-label="Rocker-bogie rover schematic">
+  <rect width="480" height="270" fill="#f7f5f0"/>
+  <!-- ground -->
+  <path d="M0 208 C 90 200, 180 214, 270 206 C 340 200, 400 218, 480 210 L 480 270 L 0 270 Z" fill="#ebe6dc"/>
+  <path d="M0 208 C 90 200, 180 214, 270 206 C 340 200, 400 218, 480 210" fill="none" stroke="#c4bdb0" stroke-width="1.25"/>
+  <!-- sand dip under front wheel -->
+  <path d="M332 214 C 348 226, 372 228, 392 216" fill="#e0d8cc" stroke="#c4bdb0" stroke-width="1"/>
+
+  <!-- far-side wheels -->
+  <g fill="none" stroke="#9bb6de" stroke-width="1.6">
+    <circle cx="128" cy="196" r="22"/>
+    <circle cx="248" cy="196" r="22"/>
+    <circle cx="368" cy="208" r="22"/>
+  </g>
+
+  <!-- rocker (rear hub -> differential -> bogie pivot) -->
+  <polyline points="116,190 214,118 286,148" fill="none" stroke="#2f5ea8" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- bogie (mid hub -> front hub) -->
+  <line x1="236" y1="190" x2="356" y2="202" stroke="#2f5ea8" stroke-width="5" stroke-linecap="round"/>
+  <!-- bogie drop to mid wheel -->
+  <line x1="248" y1="154" x2="236" y2="190" stroke="#2f5ea8" stroke-width="3.2" stroke-linecap="round"/>
+  <!-- front drop -->
+  <line x1="286" y1="148" x2="286" y2="164" stroke="#2f5ea8" stroke-width="3.2" stroke-linecap="round"/>
+  <line x1="286" y1="164" x2="356" y2="202" stroke="#2f5ea8" stroke-width="3.2" stroke-linecap="round"/>
+  <!-- rear drop -->
+  <line x1="116" y1="190" x2="116" y2="198" stroke="#2f5ea8" stroke-width="3.2" stroke-linecap="round"/>
+
+  <!-- chassis -->
+  <rect x="168" y="86" width="168" height="36" rx="5" fill="#f7f5f0" stroke="#2f5ea8" stroke-width="2.6"/>
+  <!-- mast + camera -->
+  <line x1="312" y1="86" x2="312" y2="52" stroke="#2f5ea8" stroke-width="2.4"/>
+  <circle cx="312" cy="46" r="8" fill="#f7f5f0" stroke="#2f5ea8" stroke-width="2.4"/>
+  <rect x="298" y="68" width="22" height="16" rx="2" fill="#f7f5f0" stroke="#2f5ea8" stroke-width="1.8"/>
+  <!-- solar panel hint -->
+  <rect x="184" y="78" width="70" height="8" rx="1.5" fill="#f7f5f0" stroke="#2f5ea8" stroke-width="1.6"/>
+
+  <!-- differential -->
+  <circle cx="214" cy="118" r="9" fill="#f7f5f0" stroke="#2f5ea8" stroke-width="2.4"/>
+  <circle cx="214" cy="118" r="3" fill="#2f5ea8"/>
+  <!-- bogie pivot -->
+  <circle cx="286" cy="148" r="7" fill="#f7f5f0" stroke="#2f5ea8" stroke-width="2.2"/>
+
+  <!-- near-side wheels -->
+  <g fill="#f7f5f0" stroke="#2f5ea8" stroke-width="2.6">
+    <circle cx="116" cy="204" r="26"/>
+    <circle cx="236" cy="204" r="26"/>
+    <circle cx="356" cy="216" r="26"/>
+  </g>
+  <g fill="none" stroke="#2f5ea8" stroke-width="1.4">
+    <circle cx="116" cy="204" r="8"/>
+    <circle cx="236" cy="204" r="8"/>
+    <circle cx="356" cy="216" r="8"/>
+  </g>
+</svg>

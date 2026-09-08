@@ -1,197 +1,98 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth" data-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script>(function(){try{var t=localStorage.getItem("theme");if(t!=="dark"&&t!=="light"){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme:dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Cognitive Robotics Lab</title>
-    
-    <!-- Meta Information -->
-    <meta name="description" content="Explore the innovative projects at Cognitive Robotics Lab, from AI medical diagnostics to autonomous drone navigation and robotic systems.">
-    <meta name="keywords" content="AI Projects, Robotics Projects, Medical AI, Autonomous Systems, Deep Learning Projects">
-
-    <!-- External Dependencies -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Projects · MARVEL Lab</title>
+    <meta name="description" content="Funded and faculty projects at MARVEL Lab, University of Dhaka, including IDRC Ma Mental Health and Ministry of Science and Technology grants.">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="MARVEL Lab, University of Dhaka">
+    <meta name="keywords" content="research grants, IDRC, University of Dhaka, MARVEL Lab">
+    <meta name="theme-color" content="#2f5ea8">
+    <link rel="canonical" href="https://marvel-lab-du.github.io/projects.html">
+    <link rel="icon" type="image/svg+xml" href="assets/logo/mark-e.svg">
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+    <link rel="apple-touch-icon" href="assets/logo/favicon.png">
+    <meta property="og:site_name" content="MARVEL Lab">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marvel-lab-du.github.io/projects.html">
+    <meta property="og:title" content="Projects · MARVEL Lab">
+    <meta property="og:description" content="Funded and faculty projects at MARVEL Lab, University of Dhaka, including IDRC Ma Mental Health and Ministry of Science and Technology grants.">
+    <meta property="og:image" content="https://marvel-lab-du.github.io/assets/logo/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Projects · MARVEL Lab">
+    <meta name="twitter:description" content="Funded and faculty projects at MARVEL Lab, University of Dhaka, including IDRC Ma Mental Health and Ministry of Science and Technology grants.">
+    <meta name="twitter:image" content="https://marvel-lab-du.github.io/assets/logo/og.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="styles.css?v=20260909q">
 </head>
-
-<body class="antialiased">
-
-    <!-- Signature Logo -->
-    <a href="index.html">
-        <img src="assets/images/logo.png" alt="Lab Logo" id="signature-logo" class="interactive">
-    </a>
-    
-    <!-- Theme Toggle Button -->
-    <button id="theme-toggle" class="hover:text-accent-red transition-colors duration-200 text-2xl focus:outline-none interactive">
-        <!-- Icon is set by JS -->
-    </button>
-
-    <!-- Main Content -->
-    <div id="main-content">
-        <!-- Header -->
-        <header class="relative w-full h-[60vh] overflow-hidden">
-            <!-- Full-width Background Image -->
-            <div class="absolute inset-0 w-full h-full">
-                <img src="https://images.pexels.com/photos/5473298/pexels-photo-5473298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                     alt="Projects Background" 
-                     class="w-full h-full object-cover">
-                <!-- Dark Overlay for better text visibility -->
-                <div class="absolute inset-0 bg-black/50"></div>
-            </div>
-            
-            <!-- Centered Content -->
-            <div class="relative z-10 w-full h-full flex items-center justify-center text-center">
-                <div class="px-8">
-                    <h1 class="text-5xl md:text-7xl font-bold tracking-wider mb-4 text-white">PROJECT ARCHIVES</h1>
-                    <p class="text-xl md:text-2xl font-['Roboto_Mono'] normal-case text-gray-200">Turning Groundbreaking Research into Real-World Solutions</p>
-                </div>
-            </div>
+<body>
+    <div id="nav-placeholder"></div>
+    <main class="wrap-wide">
+        <header class="page-head">
+            <h1>Projects</h1>
+            <p class="lead">Competitive grants and faculty projects. Dates and funders are from the University of Dhaka faculty profile, the 2023–24 DU annual report, and paper acknowledgements.</p>
         </header>
 
-        <main class="container">
-            <!-- Navigation Bar Wrapper -->
-            <div id="nav-wrapper" class="sticky top-0 z-50 py-4 mb-10">
-                <nav class="max-w-5xl mx-auto bg-card/85 backdrop-blur-md rounded-lg border border-border-color shadow-md">
-                    <div class="max-w-7xl mx-auto px-4">
-                        <div class="flex justify-center items-center">
-                            <!-- Desktop Menu -->
-                            <div class="hidden md:flex items-center">
-                                <ul class="flex items-center space-x-4 lg:space-x-6 text-sm py-2">
-                                    <li><a href="index.html" class="hover:text-primary-color transition-colors duration-200">Home</a></li>
-                                    <li><a href="research.html" class="hover:text-primary-color transition-colors duration-200">Research</a></li>
-                                    <li><a href="projects.html" class="text-primary-color transition-colors duration-200">Projects</a></li>
-                                    <li><a href="publications.html" class="hover:text-primary-color transition-colors duration-200">Publications</a></li>
-                                    <li><a href="team.html" class="hover:text-primary-color transition-colors duration-200">Team</a></li>
-                                    <li><a href="contact.html" class="hover:text-primary-color transition-colors duration-200">Contact</a></li>
-                                </ul>
-                            </div>
-
-                            <!-- Mobile Menu Button -->
-                            <div class="md:hidden flex items-center w-full justify-center py-2">
-                                <button id="mobile-menu-button" class="hover:text-accent-red transition-colors duration-200 text-2xl focus:outline-none">
-                                    <i class="fas fa-bars"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Mobile Menu -->
-                    <div id="mobile-menu" class="hidden md:hidden">
-                        <ul class="flex flex-col items-center space-y-4 py-4 border-t border-border-color">
-                           <li><a href="index.html" class="hover:text-primary-color transition-colors duration-200">Home</a></li>
-                           <li><a href="research.html" class="hover:text-primary-color transition-colors duration-200">Research</a></li>
-                           <li><a href="projects.html" class="hover:text-primary-color transition-colors duration-200">Projects</a></li>
-                           <li><a href="publications.html" class="hover:text-primary-color transition-colors duration-200">Publications</a></li>
-                           <li><a href="team.html" class="hover:text-primary-color transition-colors duration-200">Team</a></li>
-                           <li><a href="contact.html" class="hover:text-primary-color transition-colors duration-200">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-
-            <!-- Projects Grid -->
-            <section id="projects-grid" class="py-10">
-                <div class="max-w-6xl mx-auto grid sm:grid-cols-1 lg:grid-cols-2 gap-8">
-                    
-                    <!-- Project 1: AI Medical Imaging -->
-                    <div class="project-card bg-card p-6 rounded-lg interactive">
-                        <img src="https://miro.medium.com/v2/resize:fit:1400/1*D_cQ1GqYd20p_T22t0j0qA.gif" alt="Deep RL Agent GIF" class="rounded-md mb-4 w-full h-48 object-cover" loading="lazy">
-                        <div class="project-content">
-                            <h3 class="text-xl mb-2 normal-case">AI for Medical Imaging</h3>
-                            <p class="mb-4 text-sm project-description normal-case">
-                                Developing a deep learning model for early-stage cancer detection in medical scans, aiming to improve diagnostic accuracy and patient outcomes through advanced computer vision techniques.
-                            </p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="skills-button px-3 py-1 rounded-full text-xs">Deep Learning</span>
-                                <span class="skills-button px-3 py-1 rounded-full text-xs">Computer Vision</span>
-                                <span class="skills-button px-3 py-1 rounded-full text-xs">Healthcare AI</span>
-                            </div>
-                            <a href="publications.html" class="text-accent-red hover:underline mt-auto font-bold">
-                                View Publications <i class="fas fa-arrow-right ml-1 text-xs"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Project 2: Autonomous Drone Navigation -->
-                    <div class="project-card bg-card p-6 rounded-lg interactive">
-                         <img src="https://assets-global.website-files.com/600fe6e1ff56023533493776/6034177044a67b73c71c1837_6019651558955a00010ab52c_Isaac_Sim_release_on_Omniverse_main.gif" alt="Isaac Sim GIF" class="rounded-md mb-4 w-full h-48 object-cover" loading="lazy">
-                        <div class="project-content">
-                            <h3 class="text-xl mb-2 normal-case">Autonomous Drone Navigation</h3>
-                            <p class="mb-4 text-sm project-description normal-case">
-                                Training autonomous drones using Deep Reinforcement Learning in photorealistic simulations to navigate complex, GPS-denied environments with real-time obstacle avoidance.
-                            </p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="skills-button px-3 py-1 rounded-full text-xs">Reinforcement Learning</span>
-                                <span class="skills-button px-3 py-1 rounded-full text-xs">Robotics</span>
-                                <span class="skills-button px-3 py-1 rounded-full text-xs">Simulation</span>
-                            </div>
-                            <a href="publications.html" class="text-accent-red hover:underline mt-auto font-bold">
-                                View Publications <i class="fas fa-arrow-right ml-1 text-xs"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Project 3: Sign Language Robot -->
-                    <div class="project-card bg-card p-6 rounded-lg interactive">
-                        <img src="https://placehold.co/600x400/161b22/8b949e?text=Sign+Language+Robot" alt="Sign Language Robot" class="rounded-md mb-4 w-full h-48 object-cover" loading="lazy">
-                        <div class="project-content">
-                            <h3 class="text-xl mb-2 normal-case">Humanoid Sign Language Interpreter</h3>
-                            <p class="mb-4 text-sm project-description normal-case">
-                                Designing and developing humanoid robots capable of interpreting and performing sign language, bridging communication gaps for the deaf community.
-                            </p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="skills-button px-3 py-1 rounded-full text-xs">Human-Robot Interaction</span>
-                                <span class="skills-button px-3 py-1 rounded-full text-xs">Computer Vision</span>
-                                <span class="skills-button px-3 py-1 rounded-full text-xs">Robotics</span>
-                            </div>
-                            <a href="publications.html" class="text-accent-red hover:underline mt-auto font-bold">
-                                View Publications <i class="fas fa-arrow-right ml-1 text-xs"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Project 4: Rehabilitation Assessment -->
-                    <div class="project-card bg-card p-6 rounded-lg interactive">
-                        <img src="https://placehold.co/600x400/161b22/8b949e?text=Rehabilitation+Assessment" alt="Rehabilitation Assessment" class="rounded-md mb-4 w-full h-48 object-cover" loading="lazy">
-                        <div class="project-content">
-                            <h3 class="text-xl mb-2 normal-case">AI-Powered Rehabilitation Assessment</h3>
-                            <p class="mb-4 text-sm project-description normal-case">
-                                Using graph convolutional networks and computer vision to automatically assess and track physical rehabilitation exercises, providing real-time feedback to patients and therapists.
-                            </p>
-                            <div class="flex flex-wrap gap-2 mb-4">
-                                <span class="skills-button px-3 py-1 rounded-full text-xs">Graph Neural Networks</span>
-                                <span class="skills-button px-3 py-1 rounded-full text-xs">Pose Estimation</span>
-                                <span class="skills-button px-3 py-1 rounded-full text-xs">Healthcare</span>
-                            </div>
-                            <a href="publications.html" class="text-accent-red hover:underline mt-auto font-bold">
-                                View Publications <i class="fas fa-arrow-right ml-1 text-xs"></i>
-                            </a>
-                        </div>
-                    </div>
-
+        <section class="section">
+            <h2 class="section-title">Active and recent grants</h2>
+            <div class="entry" id="ma-mental-health" data-reveal>
+                <div class="when">2023–ongoing</div>
+                <div class="what">
+                    <h3>Ma (Mother) Mental Health</h3>
+                    <div class="org">International Development Research Centre (IDRC), Canada · PI: Sejuti Rahman</div>
+                    <p>Artificial intelligence for detection of perinatal depression. Also listed on Md. Jubair Ahmed Sourov’s DU project record (PHQ Global / IDRC).</p>
                 </div>
-            </section>
-
-        </main>
-
-        <footer class="text-center py-8 border-t border-border-color">
-            <p class="text-sm">&copy; <span id="current-year"></span> Cognitive Robotics Lab. All Rights Reserved.</p>
-            <p class="text-xs mt-1">Last Transmission: <span id="current-time"></span></p>
-        </footer>
-    </div>
-
-    <!-- Custom Cursor Elements -->
-    <div id="cursor-dot"></div>
-    <div id="cursor-outline"></div>
-
-    <!-- Custom JavaScript -->
-    <script src="assets/js/main.js"></script>
+            </div>
+            <div class="entry" data-reveal>
+                <div class="when">2023–24</div>
+                <div class="what">
+                    <h3>Continuous Bangla Sign Language, gloss-free</h3>
+                    <div class="org">Ministry of Science and Technology, Bangladesh · SRG-232431</div>
+                    <p>Special Innovation Grant supporting SignFormer-GCN and related BdSL translation. Paper acknowledgement names Dr. Rahman as grant recipient.</p>
+                </div>
+            </div>
+            <div class="entry" data-reveal>
+                <div class="when">2023</div>
+                <div class="what">
+                    <h3>Neurodegenerative diagnosis via image memorability</h3>
+                    <div class="org">Ministry of Science and Technology · PI: Sejuti Rahman</div>
+                    <p>Deep learning-driven automated diagnosis using memorability, connected to the GEMM IJCNN 2023 line of work.</p>
+                </div>
+            </div>
+            <div class="entry" data-reveal>
+                <div class="when">2022–23</div>
+                <div class="what">
+                    <h3>UAV-Cop</h3>
+                    <div class="org">University Grants Commission, Bangladesh</div>
+                    <p>Airborne traffic-accident surveillance and analysis.</p>
+                </div>
+            </div>
+            <div class="entry" data-reveal>
+                <div class="when">ongoing / DU record</div>
+                <div class="what">
+                    <h3>AI-powered robo-therapist for stroke rehab</h3>
+                    <div class="org">University of Dhaka faculty project record · PI: Sejuti Rahman</div>
+                    <p>Guidance and quality assessment of stroke rehabilitation exercises, sitting next to the TNSRE graph-assessment papers.</p>
+                </div>
+            </div>
+            <div class="entry" data-reveal>
+                <div class="when">UGC</div>
+                <div class="what">
+                    <h3>Assistance robot to reduce contagion exposure</h3>
+                    <div class="org">University Grants Commission, Bangladesh · PI: Sejuti Rahman</div>
+                    <p>Listed in the University of Dhaka annual report 2023–24 as an assistance robot to fight contagion by reducing doctor–patient contact.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="components.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

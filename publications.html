@@ -1,204 +1,363 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth" data-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script>(function(){try{var t=localStorage.getItem("theme");if(t!=="dark"&&t!=="light"){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme:dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications | Cognitive Robotics Lab</title>
-    
-    <!-- Meta Information -->
-    <meta name="description" content="Access the peer-reviewed publications and scholarly articles from the researchers at Cognitive Robotics Lab.">
-    <meta name="keywords" content="AI Publications, Machine Learning Papers, Research Papers, Computer Vision, Healthcare AI, Robotics Research">
-
-    <!-- External Dependencies -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Publications · MARVEL Lab</title>
+    <meta name="description" content="Publications of MARVEL Lab and Dr. Sejuti Rahman, including Q1 journal papers in IEEE TNSRE, Cognitive Computation, PLOS ONE, and AAAI.">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="MARVEL Lab, University of Dhaka">
+    <meta name="keywords" content="Sejuti Rahman publications, IEEE TNSRE, Q1 journals, Google Scholar">
+    <meta name="theme-color" content="#2f5ea8">
+    <link rel="canonical" href="https://marvel-lab-du.github.io/publications.html">
+    <link rel="icon" type="image/svg+xml" href="assets/logo/mark-e.svg">
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+    <link rel="apple-touch-icon" href="assets/logo/favicon.png">
+    <meta property="og:site_name" content="MARVEL Lab">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marvel-lab-du.github.io/publications.html">
+    <meta property="og:title" content="Publications · MARVEL Lab">
+    <meta property="og:description" content="Publications of MARVEL Lab and Dr. Sejuti Rahman, including Q1 journal papers in IEEE TNSRE, Cognitive Computation, PLOS ONE, and AAAI.">
+    <meta property="og:image" content="https://marvel-lab-du.github.io/assets/logo/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Publications · MARVEL Lab">
+    <meta name="twitter:description" content="Publications of MARVEL Lab and Dr. Sejuti Rahman, including Q1 journal papers in IEEE TNSRE, Cognitive Computation, PLOS ONE, and AAAI.">
+    <meta name="twitter:image" content="https://marvel-lab-du.github.io/assets/logo/og.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="styles.css?v=20260909q">
 </head>
-
-<body class="antialiased">
-
-    <!-- Signature Logo -->
-    <a href="index.html">
-        <img src="assets/images/logo.png" alt="Lab Logo" id="signature-logo" class="interactive">
-    </a>
-    
-    <!-- Theme Toggle Button -->
-    <button id="theme-toggle" class="hover:text-accent-red transition-colors duration-200 text-2xl focus:outline-none interactive">
-        <!-- Icon is set by JS -->
-    </button>
-
-    <!-- Main Content -->
-    <div id="main-content">
-        <!-- Header -->
-        <header class="relative w-full h-[60vh] overflow-hidden">
-            <!-- Full-width Background Image -->
-            <div class="absolute inset-0 w-full h-full">
-                <img src="https://images.pexels.com/photos/267507/pexels-photo-267507.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                     alt="Publications Background" 
-                     class="w-full h-full object-cover">
-                <!-- Dark Overlay for better text visibility -->
-                <div class="absolute inset-0 bg-black/50"></div>
-            </div>
-            
-            <!-- Centered Content -->
-            <div class="relative z-10 w-full h-full flex items-center justify-center text-center">
-                <div class="px-8">
-                    <h1 class="text-5xl md:text-7xl font-bold tracking-wider mb-4 text-white">PUBLICATION ARCHIVES</h1>
-                    <p class="text-xl md:text-2xl font-['Roboto_Mono'] normal-case text-gray-200">Our Contributions to the Scientific Community</p>
-                </div>
-            </div>
+<body>
+    <div id="nav-placeholder"></div>
+    <main class="wrap-wide">
+        <header class="page-head">
+            <h1>Publications</h1>
+            <p class="lead">Selected papers from Dr. Sejuti Rahman's <a href="https://scholar.google.com/citations?user=j8XhiIEAAAAJ">Google Scholar</a> profile (835 citations, h-index 15, September 2026). Among the most-cited papers of the last ten years, <strong>13 journal articles are in Q1 venues</strong> (Scimago; 26 journals, 7 books/conferences excluded). Duplicate Scholar entries and preprints of later journal versions are omitted.</p>
         </header>
 
-        <main class="container">
-            <!-- Navigation Bar Wrapper -->
-             <div id="nav-wrapper" class="sticky top-0 z-50 py-4 mb-10">
-                <nav class="max-w-5xl mx-auto bg-card/85 backdrop-blur-md rounded-lg border border-border-color shadow-md">
-                    <div class="max-w-7xl mx-auto px-4">
-                        <div class="flex justify-center items-center">
-                            <!-- Desktop Menu -->
-                            <div class="hidden md:flex items-center">
-                                <ul class="flex items-center space-x-4 lg:space-x-6 text-sm py-2">
-                                    <li><a href="index.html" class="hover:text-primary-color transition-colors duration-200">Home</a></li>
-                                    <li><a href="research.html" class="hover:text-primary-color transition-colors duration-200">Research</a></li>
-                                    <li><a href="projects.html" class="hover:text-primary-color transition-colors duration-200">Projects</a></li>
-                                    <li><a href="publications.html" class="text-primary-color transition-colors duration-200">Publications</a></li>
-                                    <li><a href="team.html" class="hover:text-primary-color transition-colors duration-200">Team</a></li>
-                                    <li><a href="contact.html" class="hover:text-primary-color transition-colors duration-200">Contact</a></li>
-                                </ul>
-                            </div>
+        <div class="filters">
+            <button class="filter-btn active" data-key="all">All</button>
+            <button class="filter-btn" data-key="q1">Q1 journals</button>
+            <button class="filter-btn" data-key="robotics">Robotics</button>
+            <button class="filter-btn" data-key="medical">Medical AI</button>
+            <button class="filter-btn" data-key="vision">Vision</button>
+            <button class="filter-btn" data-key="hri">HRI / sign</button>
+            <button class="filter-btn" data-key="gnn">Graphs</button>
+        </div>
 
-                            <!-- Mobile Menu Button -->
-                            <div class="md:hidden flex items-center w-full justify-center py-2">
-                                <button id="mobile-menu-button" class="hover:text-accent-red transition-colors duration-200 text-2xl focus:outline-none">
-                                    <i class="fas fa-bars"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Mobile Menu -->
-                    <div id="mobile-menu" class="hidden md:hidden">
-                        <ul class="flex flex-col items-center space-y-4 py-4 border-t border-border-color">
-                           <li><a href="index.html" class="hover:text-primary-color transition-colors duration-200">Home</a></li>
-                           <li><a href="research.html" class="hover:text-primary-color transition-colors duration-200">Research</a></li>
-                           <li><a href="projects.html" class="hover:text-primary-color transition-colors duration-200">Projects</a></li>
-                           <li><a href="publications.html" class="hover:text-primary-color transition-colors duration-200">Publications</a></li>
-                           <li><a href="team.html" class="hover:text-primary-color transition-colors duration-200">Team</a></li>
-                           <li><a href="contact.html" class="hover:text-primary-color transition-colors duration-200">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-
-            <!-- Publications List -->
-            <section id="publications-list" class="py-10">
-                <div class="max-w-5xl mx-auto space-y-8">
-
-                    <!-- Publication Entry -->
-                    <div class="bg-card p-6 rounded-lg border border-border-color interactive publication-card">
-                        <h3 class="text-lg font-bold text-primary-color normal-case">
-                            <a href="#" class="hover:text-accent-red transition-colors">Graph convolutional networks for assessment of physical rehabilitation exercises</a>
-                        </h3>
-                        <p class="text-sm mt-1 normal-case">S Deb, MF Islam, S Rahman, S Rahman</p>
-                        <p class="text-sm text-secondary-color mt-2 italic">IEEE Transactions on Neural Systems and Rehabilitation Engineering 30, 410-419, 2022</p>
-                        <div class="mt-3 flex items-center gap-4 text-sm">
-                            <span class="font-bold text-accent-red">Cited by 74</span>
-                            <a href="#" class="social-icon"><i class="ai ai-google-scholar"></i></a>
-                            <a href="#" class="social-icon"><i class="fas fa-file-pdf"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Publication Entry -->
-                    <div class="bg-card p-6 rounded-lg border border-border-color interactive publication-card">
-                        <h3 class="text-lg font-bold text-primary-color normal-case">
-                            <a href="#" class="hover:text-accent-red transition-colors">AI-driven Stroke Rehabilitation Systems and Assessment: A Systematic Review</a>
-                        </h3>
-                        <p class="text-sm mt-1 normal-case">S Rahman, S Sarker, AKMN Haque, MM Uttsha, MF Islam, S Deb</p>
-                        <p class="text-sm text-secondary-color mt-2 italic">IEEE Transactions on Neural Systems and Rehabilitation Engineering, 2022</p>
-                        <div class="mt-3 flex items-center gap-4 text-sm">
-                            <span class="font-bold text-accent-red">Cited by 67</span>
-                            <a href="#" class="social-icon"><i class="ai ai-google-scholar"></i></a>
-                            <a href="#" class="social-icon"><i class="fas fa-file-pdf"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Publication Entry -->
-                    <div class="bg-card p-6 rounded-lg border border-border-color interactive publication-card">
-                        <h3 class="text-lg font-bold text-primary-color normal-case">
-                            <a href="#" class="hover:text-accent-red transition-colors">Deep learning–driven automated detection of Covid-19 from radiography images: A comparative analysis</a>
-                        </h3>
-                        <p class="text-sm mt-1 normal-case">S Rahman, S Sarker, MAA Miraj, RA Nihal, AKM Nadimul Haque, ...</p>
-                        <p class="text-sm text-secondary-color mt-2 italic">Cognitive Computation, 1-30, 2021</p>
-                        <div class="mt-3 flex items-center gap-4 text-sm">
-                            <span class="font-bold text-accent-red">Cited by 50</span>
-                            <a href="#" class="social-icon"><i class="ai ai-google-scholar"></i></a>
-                            <a href="#" class="social-icon"><i class="fas fa-file-pdf"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Publication Entry -->
-                    <div class="bg-card p-6 rounded-lg border border-border-color interactive publication-card">
-                        <h3 class="text-lg font-bold text-primary-color normal-case">
-                            <a href="#" class="hover:text-accent-red transition-colors">Bangla sign alphabet recognition with zero-shot and transfer learning</a>
-                        </h3>
-                        <p class="text-sm mt-1 normal-case">RA Nihal, S Rahman, NM Broti, SA Deowan</p>
-                        <p class="text-sm text-secondary-color mt-2 italic">Pattern Recognition Letters 150, 84-93, 2021</p>
-                        <div class="mt-3 flex items-center gap-4 text-sm">
-                            <span class="font-bold text-accent-red">Cited by 45</span>
-                            <a href="#" class="social-icon"><i class="ai ai-google-scholar"></i></a>
-                            <a href="#" class="social-icon"><i class="fas fa-file-pdf"></i></a>
-                        </div>
-                    </div>
-                    
-                     <!-- Publication Entry -->
-                    <div class="bg-card p-6 rounded-lg border border-border-color interactive publication-card">
-                        <h3 class="text-lg font-bold text-primary-color normal-case">
-                            <a href="#" class="hover:text-accent-red transition-colors">Automated detection approaches to autism spectrum disorder based on human activity analysis: A review</a>
-                        </h3>
-                        <p class="text-sm mt-1 normal-case">S Rahman, SF Ahmed, O Shahid, MA Arrafi, MAR Ahad</p>
-                        <p class="text-sm text-secondary-color mt-2 italic">Cognitive Computation 14 (5), 1773-1800, 2022</p>
-                        <div class="mt-3 flex items-center gap-4 text-sm">
-                            <span class="font-bold text-accent-red">Cited by 32</span>
-                            <a href="#" class="social-icon"><i class="ai ai-google-scholar"></i></a>
-                            <a href="#" class="social-icon"><i class="fas fa-file-pdf"></i></a>
-                        </div>
-                    </div>
-                    
-                     <!-- Publication Entry -->
-                    <div class="bg-card p-6 rounded-lg border border-border-color interactive publication-card">
-                        <h3 class="text-lg font-bold text-primary-color normal-case">
-                            <a href="#" class="hover:text-accent-red transition-colors">Design and development of a humanoid robot for sign language interpretation</a>
-                        </h3>
-                        <p class="text-sm mt-1 normal-case">RA Nihal, NM Broti, SA Deowan, S Rahman</p>
-                        <p class="text-sm text-secondary-color mt-2 italic">SN Computer Science 2, 1-17, 2021</p>
-                        <div class="mt-3 flex items-center gap-4 text-sm">
-                            <span class="font-bold text-accent-red">Cited by 20</span>
-                            <a href="#" class="social-icon"><i class="ai ai-google-scholar"></i></a>
-                            <a href="#" class="social-icon"><i class="fas fa-file-pdf"></i></a>
-                        </div>
-                    </div>
-
+        <div class="year-head">2026</div>
+        <div class="pub" id="iros-2026" data-reveal data-filter="robotics">
+            <div class="pub-thumb"><img src="assets/images/research/rocker-bogie.jpg" alt="Rocker-bogie rover schematic"></div>
+            <div>
+                <div class="pub-title">Escape Without a Recipe: Maneuver-Agnostic Mars Rover Recovery from Granular Entrapment</div>
+                <div class="pub-authors">Meraj Hossain Promit, Chandak Chakma, Md. Jubair Ahmed Sourov, and <span class="me">Sejuti Rahman</span></div>
+                <div class="pub-venue">IROS 2026 Space Robotics Workshop, Pittsburgh, PA · accepted</div>
+                <p class="small muted" style="margin-bottom:8px">Learning-based recovery when wheels sink in deformable terrain, without a fixed maneuver catalog.</p>
+                <div class="pub-links">
+                    <a href="https://space-robots.org/iros2026/" target="_blank" rel="noopener">Workshop</a>
                 </div>
-            </section>
-        </main>
+            </div>
+        </div>
 
-        <footer class="text-center py-8 border-t border-border-color">
-            <p class="text-sm">&copy; <span id="current-year"></span> Cognitive Robotics Lab. All Rights Reserved.</p>
-            <p class="text-xs mt-1">Last Transmission: <span id="current-time"></span></p>
-        </footer>
-    </div>
+        <div class="year-head">2025</div>
+        <div class="pub" data-reveal data-filter="hri gnn q1">
+            <div class="pub-thumb"><img src="assets/images/papers/signformer-gcn.jpg" alt="SignFormer-GCN overview figure from PLOS ONE"></div>
+            <div>
+                <div class="pub-title">SignFormer-GCN: Continuous sign language translation using spatio-temporal graph convolutional networks</div>
+                <div class="pub-authors">SH Arib, R Akter, S Rahman, <span class="me">S Rahman</span></div>
+                <div class="pub-venue">PLOS ONE 20(2), e0316298, 2025 · cited by 18 <span class="q1">Q1</span></div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1371/journal.pone.0316298" target="_blank" rel="noopener">DOI / PDF</a>
+                    <a href="https://github.com/rabeya-akter/SignLanguageTranslation" target="_blank" rel="noopener">Code</a>
+                </div>
+            </div>
+        </div>
+        <div class="pub" data-reveal data-filter="vision q1">
+            <div class="pub-thumb pub-thumb--ph"><i class="fas fa-cube"></i><span>Neurocomputing</span></div>
+            <div>
+                <div class="pub-title">ReKon3D: Relation-knowledge aware multi-modal embedding and contrastive GAN for zero-shot 3D recognition</div>
+                <div class="pub-authors">Md Fokhrul Islam, <span class="me">Sejuti Rahman</span></div>
+                <div class="pub-venue">Neurocomputing 640, 2025 · cited by 1 <span class="q1">Q1</span></div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1016/j.neucom.2025.130223" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
+        <div class="pub" id="beyond-words" data-reveal data-filter="hri robotics">
+            <div class="pub-thumb"><img src="assets/images/papers/beyond-words-fig.jpg" alt="Pepper robot arm joints from Beyond Words"></div>
+            <div>
+                <div class="pub-title">Beyond Words: Integrating Personality Traits and Context-Driven Gestures in Human-Robot Interactions</div>
+                <div class="pub-authors">MT Tahsin Tariq Banna, <span class="me">Sejuti Rahman</span></div>
+                <div class="pub-venue">AAMAS 2025 · cited by 12</div>
+                <div class="pub-links">
+                    <a href="https://dl.acm.org/doi/10.5555/3709347.3743537" target="_blank" rel="noopener">DOI</a>
+                    <a href="https://github.com/TahsinTariq/Beyond-Words" target="_blank" rel="noopener">Code</a>
+                    <a href="https://tahsintariq.github.io/publication/2025-beyond_words/" target="_blank" rel="noopener">Page</a>
+                </div>
+            </div>
+        </div>
+        <div class="pub" data-reveal data-filter="vision">
+            <div class="pub-thumb pub-thumb--ph"><i class="fas fa-microscope"></i><span>RSC Advances</span></div>
+            <div>
+                <div class="pub-title">Deep-learning enabled rapid and low-cost detection of microplastics in consumer products following on-site extraction and image processing</div>
+                <div class="pub-authors">AH Md. Zayed Bin Zahir Arju, Nafisa Amin Hridi, Lamiya Dewan, and others including <span class="me">Sejuti Rahman</span></div>
+                <div class="pub-venue">RSC Advances 15(14), 10473–10483, 2025 · cited by 33</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1039/D4RA08384A" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
 
-    <!-- Custom Cursor Elements -->
-    <div id="cursor-dot"></div>
-    <div id="cursor-outline"></div>
+        <div class="year-head">2024</div>
+        <div class="pub" data-reveal data-filter="gnn">
+            <div class="pub-thumb"><img src="assets/images/papers/seagwnn-1.png" alt="SEA-GWNN first page"></div>
+            <div>
+                <div class="pub-title">SEA-GWNN: Simple and Effective Adaptive Graph Wavelet Neural Network</div>
+                <div class="pub-authors">S Deb, S Rahman, <span class="me">S Rahman</span></div>
+                <div class="pub-venue">Proceedings of the AAAI Conference on Artificial Intelligence 38(10), 11740–11748, 2024 · cited by 12</div>
+                <div class="pub-links">
+                    <a href="https://ojs.aaai.org/index.php/AAAI/article/view/29057" target="_blank" rel="noopener">AAAI</a>
+                </div>
+            </div>
+        </div>
+        <div class="pub" data-reveal data-filter="vision q1">
+            <div class="pub-thumb pub-thumb--ph"><i class="fas fa-cube"></i><span>IVC 2024</span></div>
+            <div>
+                <div class="pub-title">VAE-GAN3D: Leveraging image-based semantics for 3D zero-shot recognition</div>
+                <div class="pub-authors">MT Abdullah, S Rahman, <span class="me">S Rahman</span>, MF Islam</div>
+                <div class="pub-venue">Image and Vision Computing 147, 105049, 2024 · cited by 11 <span class="q1">Q1</span></div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1016/j.imavis.2024.105049" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
+        <div class="pub" data-reveal data-filter="gnn q1">
+            <div class="pub-thumb pub-thumb--ph"><i class="fas fa-share-nodes"></i><span>PRL 2024</span></div>
+            <div>
+                <div class="pub-title">GA-GWNN: Generalized Adaptive Graph Wavelet Neural Network</div>
+                <div class="pub-authors">S Deb, S Rahman, <span class="me">S Rahman</span></div>
+                <div class="pub-venue">Pattern Recognition Letters 177, 128–134, 2024 · cited by 4 <span class="q1">Q1</span></div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1016/j.patrec.2023.12.004" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
 
-    <!-- Custom JavaScript -->
-    <script src="assets/js/main.js"></script>
+        <div class="year-head">2023</div>
+        <div class="pub" id="gemm" data-reveal data-filter="medical gnn">
+            <div class="pub-thumb"><img src="assets/images/papers/gemm-1.png" alt="GEMM paper first page"></div>
+            <div>
+                <div class="pub-title">GEMM: A Graph Embedded Model for Memorability Prediction</div>
+                <div class="pub-authors">TT Banna, S Deb, S Rahman, <span class="me">S Rahman</span></div>
+                <div class="pub-venue">IJCNN 2023 · cited by 2 · IEEE CIS grant noted on the PI biography</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1109/IJCNN54540.2023.10191500" target="_blank" rel="noopener">DOI</a>
+                    <a href="https://github.com/TahsinTariq/GEMM" target="_blank" rel="noopener">Code</a>
+                    <a href="https://youtu.be/HjJh5guZLDQ" target="_blank" rel="noopener">Video</a>
+                </div>
+            </div>
+        </div>
+        <div class="pub" data-reveal data-filter="hri">
+            <div class="pub-thumb"><img src="assets/images/papers/bornil-01.png" alt="Bornil preprint first page"></div>
+            <div>
+                <div class="pub-title">Bornil: An open-source sign language data crowdsourcing platform for AI enabled dialect-agnostic communication</div>
+                <div class="pub-authors">SE Dhruvo, MA Rahman, MK Mandal, and others including <span class="me">Sejuti Rahman</span></div>
+                <div class="pub-venue">arXiv:2308.15402, 2023 · cited by 2</div>
+                <div class="pub-links">
+                    <a href="https://arxiv.org/abs/2308.15402" target="_blank" rel="noopener">arXiv</a>
+                </div>
+            </div>
+        </div>
+        <div class="pub" data-reveal data-filter="vision q1">
+            <div class="pub-thumb"><img src="assets/images/papers/access-01.png" alt="IEEE Access paper first page"></div>
+            <div>
+                <div class="pub-title">Data-augmentation for Bangla-English Code-Mixed Sentiment Analysis: Enhancing Cross Linguistic Contextual Understanding</div>
+                <div class="pub-authors">M Tareq, MF Islam, S Deb, <span class="me">S Rahman</span>, A Al Mahmud</div>
+                <div class="pub-venue">IEEE Access, 2023 · cited by 59 <span class="q1">Q1</span></div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1109/ACCESS.2023.3277787" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="year-head">2022</div>
+        <div class="pub" id="tnsre-stroke" data-reveal data-filter="medical q1">
+            <div class="pub-thumb pub-thumb--ph"><i class="fas fa-notes-medical"></i><span>TNSRE review</span></div>
+            <div>
+                <div class="pub-title">AI-driven Stroke Rehabilitation Systems and Assessment: A Systematic Review</div>
+                <div class="pub-authors"><span class="me">S Rahman</span>, S Sarker, AKMN Haque, MM Uttsha, MF Islam, S Deb</div>
+                <div class="pub-venue">IEEE Transactions on Neural Systems and Rehabilitation Engineering, 2022 · cited by 116 <span class="q1">Q1</span></div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1109/TNSRE.2022.3208887" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
+        <div class="pub" data-reveal data-filter="medical gnn q1">
+            <div class="pub-thumb"><img src="assets/images/papers/tnsre-01.png" alt="IEEE TNSRE paper first page"></div>
+            <div>
+                <div class="pub-title">Graph convolutional networks for assessment of physical rehabilitation exercises</div>
+                <div class="pub-authors">S Deb, MF Islam, S Rahman, <span class="me">S Rahman</span></div>
+                <div class="pub-venue">IEEE TNSRE 30, 410–419, 2022 · cited by 112 <span class="q1">Q1</span></div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1109/TNSRE.2022.3150392" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
+        <div class="pub" data-reveal data-filter="medical q1">
+            <div class="pub-thumb pub-thumb--ph"><i class="fas fa-user-doctor"></i><span>Cogn. Comput.</span></div>
+            <div>
+                <div class="pub-title">Automated detection approaches to autism spectrum disorder based on human activity analysis: A review</div>
+                <div class="pub-authors"><span class="me">S Rahman</span>, SF Ahmed, O Shahid, MA Arrafi, MAR Ahad</div>
+                <div class="pub-venue">Cognitive Computation 14(5), 1773–1800, 2022 · cited by 35 <span class="q1">Q1</span></div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1007/s12559-021-09916-8" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
+        <div class="pub" data-reveal data-filter="medical vision">
+            <div class="pub-thumb pub-thumb--ph"><i class="fas fa-x-ray"></i><span>SNCS 2022</span></div>
+            <div>
+                <div class="pub-title">COVIDXception-Net: A Bayesian optimization-based deep learning approach to diagnose COVID-19 from X-Ray images</div>
+                <div class="pub-authors">SE Arman, <span class="me">S Rahman</span>, SA Deowan</div>
+                <div class="pub-venue">SN Computer Science 3(2), 115, 2022 · cited by 18</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1007/s42979-021-00980-3" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
+        <div class="pub" data-reveal data-filter="vision">
+            <div class="pub-thumb"><img src="assets/images/papers/applsci-01.png" alt="Applied Sciences paper first page"></div>
+            <div>
+                <div class="pub-title">No-Reference Quality Assessment of Transmitted Stereoscopic Videos Based on Human Visual System</div>
+                <div class="pub-authors">MM Hasan, MA Islam, <span class="me">S Rahman</span>, MR Frater, JF Arnold</div>
+                <div class="pub-venue">Applied Sciences 12(19), 10090, 2022 · cited by 8</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.3390/app121910090" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="year-head">2021</div>
+        <div class="pub" data-reveal data-filter="medical vision q1">
+            <div class="pub-thumb pub-thumb--ph"><i class="fas fa-x-ray"></i><span>Cogn. Comput.</span></div>
+            <div>
+                <div class="pub-title">Deep learning–driven automated detection of Covid-19 from radiography images: A comparative analysis</div>
+                <div class="pub-authors"><span class="me">S Rahman</span>, S Sarker, MAA Miraj, RA Nihal, AKM Nadimul Haque, et al.</div>
+                <div class="pub-venue">Cognitive Computation, 2021 · cited by 57 <span class="q1">Q1</span></div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1007/s12559-020-09776-8" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
+        <div class="pub" data-reveal data-filter="hri q1">
+            <div class="pub-thumb pub-thumb--ph"><i class="fas fa-hands"></i><span>PRL 2021</span></div>
+            <div>
+                <div class="pub-title">Bangla sign alphabet recognition with zero-shot and transfer learning</div>
+                <div class="pub-authors">RA Nihal, <span class="me">S Rahman</span>, NM Broti, SA Deowan</div>
+                <div class="pub-venue">Pattern Recognition Letters 150, 84–93, 2021 · cited by 56 <span class="q1">Q1</span></div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1016/j.patrec.2021.06.020" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
+        <div class="pub" data-reveal data-filter="medical vision">
+            <div class="pub-thumb pub-thumb--ph"><i class="fas fa-x-ray"></i><span>SNCS 2021</span></div>
+            <div>
+                <div class="pub-title">Automated covid-19 detection from chest x-ray images: a high-resolution network (HRNet) approach</div>
+                <div class="pub-authors">S Ahmed, T Hossain, OB Hoque, S Sarker, <span class="me">S Rahman</span>, FM Shah</div>
+                <div class="pub-venue">SN Computer Science 2(4), 294, 2021 · cited by 45</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1007/s42979-021-00683-6" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
+        <div class="pub" data-reveal data-filter="hri robotics">
+            <div class="pub-thumb"><img src="assets/images/research/sign-language.jpg" alt="Humanoid sign-language interpreter"></div>
+            <div>
+                <div class="pub-title">Design and development of a humanoid robot for sign language interpretation</div>
+                <div class="pub-authors">RA Nihal, NM Broti, SA Deowan, <span class="me">S Rahman</span></div>
+                <div class="pub-venue">SN Computer Science 2, 1–17, 2021 · cited by 27</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1007/s42979-021-00775-3" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
+        <div class="pub" id="icpr-eyetrack" data-reveal data-filter="vision">
+            <div class="pub-thumb pub-thumb--ph"><i class="fas fa-eye"></i><span>ICPR 2021</span></div>
+            <div>
+                <div class="pub-title">Classifying Eye-Tracking Data Using Saliency Maps</div>
+                <div class="pub-authors">S Rahman, <span class="me">S Rahman</span>, O Shahid, MT Abdullah, JA Sourov</div>
+                <div class="pub-venue">ICPR 2020 (proc. 2021), 9288–9295 · cited by 20</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1109/ICPR48806.2021.9412667" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="year-head">2018</div>
+        <div class="pub" data-reveal data-filter="vision q1">
+            <div class="pub-thumb pub-thumb--ph"><i class="fas fa-camera"></i><span>Anim. Prod. Sci.</span></div>
+            <div>
+                <div class="pub-title">Preliminary estimation of fat depth in the lamb short loin using a hyperspectral camera</div>
+                <div class="pub-authors"><span class="me">S Rahman</span>, P Quin, T Walsh, MJ Vidal-Calleja, T McPhee, E Toohey, and others</div>
+                <div class="pub-venue">Animal Production Science 58, 1488–1496, 2018 · cited by 20 <span class="q1">Q1</span></div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1071/AN17795" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="year-head">2017 – 2011 · computational imaging</div>
+        <div class="pub" data-reveal data-filter="vision q1">
+            <div class="pub-thumb"><img src="assets/images/research/hyperspectral.jpg" alt="Hyperspectral imaging illustration"></div>
+            <div>
+                <div class="pub-title">Estimating Reflectance Parameters, Light Direction, and Shape From a Single Multispectral Image</div>
+                <div class="pub-authors"><span class="me">S Rahman</span>, A Robles-Kelly</div>
+                <div class="pub-venue">IEEE Transactions on Computational Imaging 3(4), 837–852, 2017 · cited by 4 <span class="q1">Q1</span></div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1109/TCI.2017.2734107" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
+        <div class="pub" data-reveal data-filter="vision">
+            <div class="pub-thumb pub-thumb--ph"><i class="fas fa-rainbow"></i><span>ACCV 2014</span></div>
+            <div>
+                <div class="pub-title">Color photometric stereo using a rainbow light for non-Lambertian multicolored surfaces</div>
+                <div class="pub-authors"><span class="me">S Rahman</span>, A Lam, I Sato, A Robles-Kelly</div>
+                <div class="pub-venue">ACCV 2014 · cited by 12</div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1007/978-3-319-16808-1_16" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
+        <div class="pub" data-reveal data-filter="vision q1">
+            <div class="pub-thumb pub-thumb--ph"><i class="fas fa-sun"></i><span>CVIU 2013</span></div>
+            <div>
+                <div class="pub-title">An optimisation approach to the recovery of reflection parameters from a single hyperspectral image</div>
+                <div class="pub-authors"><span class="me">S Rahman</span>, A Robles-Kelly</div>
+                <div class="pub-venue">Computer Vision and Image Understanding 117(12), 1672–1688, 2013 · cited by 8 <span class="q1">Q1</span></div>
+                <div class="pub-links">
+                    <a href="https://doi.org/10.1016/j.cviu.2013.08.006" target="_blank" rel="noopener">DOI</a>
+                </div>
+            </div>
+        </div>
+        <div class="pub" data-reveal data-filter="vision">
+            <div class="pub-thumb pub-thumb--ph"><i class="fas fa-graduation-cap"></i><span>PhD thesis</span></div>
+            <div>
+                <div class="pub-title">Estimating reflectance, illumination, and shape from a single view</div>
+                <div class="pub-authors"><span class="me">Sejuti Rahman</span></div>
+                <div class="pub-venue">PhD thesis, Australian National University, 2014</div>
+            </div>
+        </div>
+
+        <p class="small muted" style="margin-top:28px">A complete listing, including book chapters and older graphics papers, is on <a href="https://scholar.google.com/citations?user=j8XhiIEAAAAJ">Google Scholar</a> and <a href="https://www.researchgate.net/profile/Sejuti-Rahman">ResearchGate</a>.</p>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="components.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

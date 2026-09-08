@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 445 80" fill="currentColor" role="img" aria-hidden="true">
+  <polygon points="0,76 0,4 13,4 40,74.5 67,4 80,4 80,76 67,76 67,37.8 45.46,76 34.54,76 13,37.8 13,76"/>
+  <polygon points="97,76 133,1.6 169,76 153.4,76 133,30.2 112.6,76"/>
+  <path fill-rule="evenodd" d="M182,76 L182,4 H216 V37.12 H195 V76 Z M195,17 H203 V24.12 H195 Z"/>
+  <polygon points="200,24.12 203,24.12 240,76 224.4,76"/>
+  <polygon points="255,4 270.6,4 291,49.8 311.4,4 327,4 291,78.4"/>
+  <rect x="340" y="4" width="44" height="13"/>
+  <rect x="340" y="33.5" width="44" height="13"/>
+  <rect x="340" y="63" width="44" height="13"/>
+  <polygon points="399,4 412,4 412,63 445,63 445,76 399,76"/>
+</svg>

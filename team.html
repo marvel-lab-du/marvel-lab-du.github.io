@@ -1,413 +1,242 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth" data-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script>(function(){try{var t=localStorage.getItem("theme");if(t!=="dark"&&t!=="light"){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme:dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team | MARVEL Lab</title>
-    
-    <!-- Meta Information -->
-    <meta name="description" content="Meet the team of researchers, engineers, and students at MARVEL Lab driving innovation in AI and Robotics.">
-    <meta name="keywords" content="AI Research Team, Robotics Engineers, Machine Learning Researchers, Sejuti Rahman">
-
-    <!-- External Dependencies -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>People · MARVEL Lab</title>
+    <meta name="description" content="Principal investigator Dr. Sejuti Rahman, faculty, students, and alumni of MARVEL Lab, University of Dhaka.">
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="MARVEL Lab, University of Dhaka">
+    <meta name="keywords" content="Sejuti Rahman, MARVEL Lab team, University of Dhaka robotics">
+    <meta name="theme-color" content="#2f5ea8">
+    <link rel="canonical" href="https://marvel-lab-du.github.io/team.html">
+    <link rel="icon" type="image/svg+xml" href="assets/logo/mark-e.svg">
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+    <link rel="apple-touch-icon" href="assets/logo/favicon.png">
+    <meta property="og:site_name" content="MARVEL Lab">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marvel-lab-du.github.io/team.html">
+    <meta property="og:title" content="People · MARVEL Lab">
+    <meta property="og:description" content="Principal investigator Dr. Sejuti Rahman, faculty, students, and alumni of MARVEL Lab, University of Dhaka.">
+    <meta property="og:image" content="https://marvel-lab-du.github.io/assets/logo/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="People · MARVEL Lab">
+    <meta name="twitter:description" content="Principal investigator Dr. Sejuti Rahman, faculty, students, and alumni of MARVEL Lab, University of Dhaka.">
+    <meta name="twitter:image" content="https://marvel-lab-du.github.io/assets/logo/og.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="styles.css?v=20260909q">
 </head>
-
-<body class="antialiased">
-
-    <!-- Signature Logo -->
-    <a href="index.html">
-        <img src="assets/images/logo.png" alt="Lab Logo" id="signature-logo" class="interactive">
-    </a>
-    
-    <!-- Theme Toggle Button -->
-    <button id="theme-toggle" class="hover:text-accent-red transition-colors duration-200 text-2xl focus:outline-none interactive">
-        <!-- Icon is set by JS -->
-    </button>
-
-    <!-- Main Content -->
-    <div id="main-content">
-        <!-- Header -->
-        <header class="relative w-full h-[60vh] overflow-hidden">
-            <!-- Full-width Background Image -->
-            <div class="absolute inset-0 w-full h-full">
-                <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                     alt="Team Background" 
-                     class="w-full h-full object-cover">
-                <!-- Dark Overlay for better text visibility -->
-                <div class="absolute inset-0 bg-black/50"></div>
-            </div>
-            
-            <!-- Centered Content -->
-            <div class="relative z-10 w-full h-full flex items-center justify-center text-center">
-                <div class="px-8">
-                    <h1 class="text-5xl md:text-7xl font-bold tracking-wider mb-4 text-white">MEET THE TEAM</h1>
-                    <p class="text-xl md:text-2xl font-['Roboto_Mono'] normal-case text-gray-200">The Innovators Behind Our Research</p>
-                </div>
-            </div>
+<body>
+    <div id="nav-placeholder"></div>
+    <main class="wrap-wide">
+        <header class="page-head">
+            <h1>People</h1>
+            <p class="lead">Faculty, students, and alumni of MARVEL Lab.</p>
         </header>
 
-        <main class="container">
-            <!-- Navigation Bar Wrapper -->
-            <div id="nav-wrapper" class="sticky top-0 z-50 py-4 mb-10">
-                <nav class="max-w-5xl mx-auto bg-card/85 backdrop-blur-md rounded-lg border border-border-color shadow-md">
-                    <div class="max-w-7xl mx-auto px-4">
-                        <div class="flex justify-center items-center">
-                            <!-- Desktop Menu -->
-                            <div class="hidden md:flex items-center">
-                                <ul class="flex items-center space-x-4 lg:space-x-6 text-sm py-2">
-                                    <li><a href="index.html" class="hover:text-primary-color transition-colors duration-200">Home</a></li>
-                                    <li><a href="research.html" class="hover:text-primary-color transition-colors duration-200">Research</a></li>
-                                    <li><a href="projects.html" class="hover:text-primary-color transition-colors duration-200">Projects</a></li>
-                                    <li><a href="publications.html" class="hover:text-primary-color transition-colors duration-200">Publications</a></li>
-                                    <li><a href="team.html" class="text-primary-color transition-colors duration-200">Team</a></li>
-                                    <li><a href="contact.html" class="hover:text-primary-color transition-colors duration-200">Contact</a></li>
-                                </ul>
-                            </div>
-                            <!-- Mobile Menu Button -->
-                            <div class="md:hidden flex items-center w-full justify-center py-2">
-                                <button id="mobile-menu-button" class="hover:text-accent-red transition-colors duration-200 text-2xl focus:outline-none">
-                                    <i class="fas fa-bars"></i>
-                                </button>
-                            </div>
-                        </div>
+        <section class="section">
+            <h2 class="section-title">Principal investigator</h2>
+            <div class="pi">
+                <img src="assets/images/team/sejuti.jpg" alt="Dr. Sejuti Rahman">
+                <div>
+                    <h3>Dr. Sejuti Rahman</h3>
+                    <div class="role">Principal Investigator</div>
+                    <p>
+                        Associate Professor, Department of Robotics and Mechatronics Engineering, University of Dhaka (on study leave). Professor, Department of Computer Science, New Uzbekistan University. Former Chairperson of RME at DU. PhD, Australian National University (2014); MSc, University of Tokyo (2010); BSc, University of Dhaka. Postdoctoral research at the Robotics Institute, Carnegie Mellon University, and the Centre for Autonomous Systems, University of Technology Sydney. Research: medical AI, robotics, and computer vision. 835 citations, h-index 15 (Scholar, Sep 2026). Dhaka University Research Excellence Award (2025); FET Dean’s Gold Medal (2020); FB Rice Prize for patent activity at NICTA (2012).
+                    </p>
+                    <div class="links-row" style="margin-top:14px">
+                        <a class="link-chip" href="publications.html"><i class="fas fa-book"></i> Papers</a>
+                        <a class="link-chip" href="mailto:sejuti@gmail.com"><i class="fas fa-envelope"></i> sejuti@gmail.com</a>
+                        <a class="link-chip" href="mailto:s.rahman@newuu.uz"><i class="fas fa-envelope"></i> s.rahman@newuu.uz</a>
+                        <a class="link-chip" href="https://scholar.google.com/citations?user=j8XhiIEAAAAJ" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i> Scholar</a>
+                        <a class="link-chip" href="https://www.researchgate.net/profile/Sejuti-Rahman" target="_blank" rel="noopener"><i class="ai ai-researchgate"></i> ResearchGate</a>
+                        <a class="link-chip" href="https://www.du.ac.bd/faculty/faculty_details/RME/2150" target="_blank" rel="noopener"><i class="fas fa-university"></i> DU</a>
+                        <a class="link-chip" href="https://flyinglabs.org/team/dr-sejuti-rahman" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Flying Labs</a>
                     </div>
-                    <!-- Mobile Menu -->
-                    <div id="mobile-menu" class="hidden md:hidden">
-                        <ul class="flex flex-col items-center space-y-4 py-4 border-t border-border-color">
-                           <li><a href="index.html" class="hover:text-primary-color transition-colors duration-200">Home</a></li>
-                           <li><a href="research.html" class="hover:text-primary-color transition-colors duration-200">Research</a></li>
-                           <li><a href="projects.html" class="hover:text-primary-color transition-colors duration-200">Projects</a></li>
-                           <li><a href="publications.html" class="hover:text-primary-color transition-colors duration-200">Publications</a></li>
-                           <li><a href="team.html" class="hover:text-primary-color transition-colors duration-200">Team</a></li>
-                           <li><a href="contact.html" class="hover:text-primary-color transition-colors duration-200">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
+                </div>
             </div>
+        </section>
 
-            <!-- Principal Investigator -->
-            <section id="principal-investigator" class="section-divider">
-                <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-accent">//</span> Principal Investigator</h2>
-                <div class="max-w-5xl mx-auto bg-card border border-border-color rounded-lg p-8 flex flex-col md:flex-row items-center gap-8 interactive flex flex-col">
-                    <img src="https://ssl.du.ac.bd/fontView/assets/faculty_image/2150_Sejuti.jpg" alt="Dr. Sejuti Rahman" class="w-48 h-48 rounded-full object-cover border-4 border-accent-red shadow-lg">
-                    <div class="text-center md:text-left">
-                        <h3 class="text-3xl font-bold text-primary-color normal-case">Dr. Sejuti Rahman</h3>
-                        <p class="text-accent-red text-lg">Associate Professor</p>
-                        <p class="text-secondary-color mt-1">Department of Robotics and Mechatronics Engineering, University of Dhaka</p>
-                        <p class="mt-4 normal-case">
-                            Dr. Rahman leads the lab with expertise in Medical Robotics, Computer Vision, and Deep Learning. Her research focuses on creating intelligent systems for healthcare, including AI-driven diagnostics, robotic assistance for rehabilitation, and advanced 3D reconstruction for navigation.
-                        </p>
-                        <div class="mt-6 flex justify-center md:justify-start space-x-6 text-2xl">
-                            <a href="mailto:sejuti@gmail.com" class="social-icon" aria-label="Email">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="publications.html" class="social-icon" aria-label="Google Scholar">
-                                <i class="ai ai-google-scholar"></i>
-                            </a>
-                        </div>
+        <section class="section">
+            <h2 class="section-title">Faculty</h2>
+            <div class="people-grid">
+                <article class="person" data-reveal>
+                    <img src="assets/images/team/sourov.jpg" alt="Md. Jubair Ahmed Sourov">
+                    <h3>Md. Jubair Ahmed Sourov</h3>
+                    <div class="role">Lecturer, RME · DU</div>
+                    <p>Robotics, computer vision, medical AI.</p>
+                    <ul class="person-works">
+                        <li><a href="publications.html#iros-2026">Escape Without a Recipe</a> · IROS 2026</li>
+                        <li><a href="publications.html#icpr-eyetrack">Eye-tracking from saliency maps</a> · ICPR 2021</li>
+                        <li><a href="projects.html#ma-mental-health">Ma (Mother) Mental Health</a> · IDRC</li>
+                    </ul>
+                    <div class="links">
+                        <a href="mailto:sourovejubair@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://scholar.google.com/citations?user=TiIDgWMAAAAJ" target="_blank" rel="noopener" aria-label="Scholar"><i class="ai ai-google-scholar"></i></a>
+                        <a href="https://du.ac.bd/body/faculty_details/RME/61071" target="_blank" rel="noopener" aria-label="DU profile"><i class="fas fa-university"></i></a>
                     </div>
-                </div>
-            </section>
+                </article>
+            </div>
+        </section>
 
-            <!-- Student Researchers -->
-            <section id="student-researchers" class="section-divider">
-                <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-accent">//</span> Student Researchers</h2>
-                <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                    <!-- Chandak Chakma -->
-                    <div class="bg-card p-5 rounded-lg border border-border-color text-center interactive h-full flex flex-col flex flex-col">
-                        <img src="assets/images/chandak.jpg" class="w-24 h-24 rounded-full mx-auto object-cover border-2 border-border-color" alt="Chandak Chakma">
-                        <h4 class="text-lg font-bold text-primary-color mt-3 normal-case">Chandak Chakma</h4>
-                        <p class="text-sm mt-2 flex-grow normal-case">
-                            <strong>Interests:</strong> Competitive Programming, Algorithms
-                        </p>
-                        <div class="mt-3 flex justify-center space-x-4 text-lg">
-                            <a href="mailto:chandak-2021211416@rme.du.ac.bd" class="social-icon">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/chandak-chakma-5094ab235/" target="_blank" class="social-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://github.com/ChandakChakma" target="_blank" class="social-icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://codeforces.com/profile/ChandaK_ChaKma" target="_blank" class="social-icon">
-                                <i class="fas fa-code"></i>
-                            </a>
-                        </div>
+        <section class="section">
+            <h2 class="section-title">Students</h2>
+            <div class="people-grid">
+                <article class="person" data-reveal>
+                    <img src="assets/images/team/chandak.jpg" alt="Chandak Chakma">
+                    <h3>Chandak Chakma</h3>
+                    <div class="role">Undergraduate researcher</div>
+                    <p>Algorithms, competitive programming, robot learning.</p>
+                    <ul class="person-works">
+                        <li><a href="publications.html#iros-2026">Escape Without a Recipe</a> · IROS 2026</li>
+                    </ul>
+                    <div class="links">
+                        <a href="mailto:chandak-2021211416@rme.du.ac.bd" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/ChandakChakma" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/chandak-chakma-5094ab235/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     </div>
-                    
-                    <!-- Md.Ajmain Istiak Apon -->
-                    <div class="bg-card p-5 rounded-lg border border-border-color text-center interactive h-full flex flex-col flex flex-col">
-                        <img src="https://photos.app.goo.gl/nxjYQTNXrR9RvNi37" class="w-24 h-24 rounded-full mx-auto object-cover border-2 border-border-color" alt="Md.Ajmain Istiak Apon">
-                        <h4 class="text-lg font-bold text-primary-color mt-3 normal-case">Md.Ajmain Istiak Apon</h4>
-                        <p class="text-sm mt-2 flex-grow normal-case">
-                            <strong>Interests:</strong> Robotics, DL, VLM
-                        </p>
-                        <div class="mt-3 flex justify-center space-x-4 text-lg">
-                            <a href="mailto:ajmain.apon123@gmail.com" class="social-icon">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="https://github.com/onlyapon" target="_blank" class="social-icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://codeforces.com/profile/fynm" target="_blank" class="social-icon">
-                                <i class="fas fa-code"></i>
-                            </a>
-                        </div>
+                </article>
+                <article class="person" data-reveal>
+                    <img src="assets/images/team/apon.jpg" alt="Md. Ajmain Istiak Apon">
+                    <h3>Md. Ajmain Istiak Apon</h3>
+                    <div class="role">Undergraduate researcher</div>
+                    <p>Robotics, deep learning, vision-language models.</p>
+                    <div class="links">
+                        <a href="mailto:ajmain.apon123@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/ajmainapon" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
                     </div>
-                    
-                    <!-- Aesope Hasan -->
-                    <div class="bg-card p-5 rounded-lg border border-border-color text-center interactive h-full flex flex-col team-card">
-                        <img src="https://placehold.co/150x150/161b22/e6edf3?text=A.H" class="w-24 h-24 rounded-full mx-auto object-cover border-2 border-border-color" alt="Aesope Hasan">
-                        <h4 class="text-lg font-bold text-primary-color mt-3 normal-case">Aesope Hasan</h4>
-                        <p class="text-sm mt-2 flex-grow normal-case">
-                            <strong>Interests:</strong> Computer vision, HRI, Embedded Systems
-                        </p>
-                        <div class="mt-3 flex justify-center space-x-4 text-lg">
-                            <a href="mailto:aesope321@gmail.com" class="social-icon">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </div>
+                </article>
+                <article class="person" data-reveal>
+                    <img src="assets/images/team/promit.jpg" alt="Meraj Hossain Promit">
+                    <h3>Meraj Hossain Promit</h3>
+                    <div class="role">Undergraduate researcher</div>
+                    <p>Robot learning, RL, Sim2Real.</p>
+                    <ul class="person-works">
+                        <li><a href="publications.html#iros-2026">Escape Without a Recipe</a> · IROS 2026</li>
+                    </ul>
+                    <div class="links">
+                        <a href="mailto:merajhossainpromit@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://promit7473.github.io/" target="_blank" rel="noopener" aria-label="Website"><i class="fas fa-globe"></i></a>
+                        <a href="https://github.com/promit7473" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/mhpromit7473" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://scholar.google.com/citations?user=z-VDe10AAAAJ" target="_blank" rel="noopener" aria-label="Scholar"><i class="ai ai-google-scholar"></i></a>
                     </div>
-                    
-                    <!-- Sabia Sultana Kawsar -->
-                    <div class="bg-card p-5 rounded-lg border border-border-color text-center interactive h-full flex flex-col team-card">
-                        <img src="https://drive.google.com/file/d/1hQzEGGMMa6DYMmlpJ1q-bLJ_SiS0u41Q/view?usp=drivesdk" class="w-24 h-24 rounded-full mx-auto object-cover border-2 border-border-color" alt="Sabia Sultana Kawsar">
-                        <h4 class="text-lg font-bold text-primary-color mt-3 normal-case">Sabia Sultana Kawsar</h4>
-                        <p class="text-sm mt-2 flex-grow normal-case">
-                            <strong>Interests:</strong> Deep Learning, Few shot Learning, HRI
-                        </p>
-                        <div class="mt-3 flex justify-center space-x-4 text-lg">
-                            <a href="mailto:sabiasultana05@gmail.com" class="social-icon">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </div>
+                </article>
+                <article class="person" data-reveal>
+                    <img src="assets/images/team/tanvir-gh.png" alt="Tanvir Ahmed">
+                    <h3>Tanvir Ahmed</h3>
+                    <div class="role">Undergraduate researcher</div>
+                    <p>IoT, HRI, machine learning, RL, and application interfaces.</p>
+                    <div class="links">
+                        <a href="mailto:t.a.prova@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/tanvir-a0" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/tanvir-ahmed-67b5a8199/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     </div>
+                </article>
+                <article class="person" data-reveal>
+                    <img src="assets/images/team/aurin-gh.png" alt="Samin Sadique Aurin">
+                    <h3>Samin Sadique Aurin</h3>
+                    <div class="role">Undergraduate researcher</div>
+                    <p>Deep learning, computer vision, biomedical applications, HRI, embedded systems.</p>
+                    <div class="links">
+                        <a href="mailto:sa.samin1201@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/samin2703" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/samin-sadique-aurin-763341232/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+                <article class="person" data-reveal>
+                    <img src="assets/images/team/spriha-gh.png" alt="Aresha Basir Spriha">
+                    <h3>Aresha Basir Spriha</h3>
+                    <div class="role">Undergraduate researcher</div>
+                    <p>Robotics and control, AI, computer vision, cognitive science. Site collaborator.</p>
+                    <div class="links">
+                        <a href="mailto:areshabasirspriha@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/AreshaBasir" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/aresha-basir-spriha-090420300/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </article>
+                <article class="person" data-reveal>
+                    <img src="assets/images/team/mugdho.jpg" alt="Ismail Mahmood Mugdho">
+                    <h3>Ismail Mahmood Mugdho</h3>
+                    <div class="role">Undergraduate researcher</div>
+                    <p>Robotics and control, AI, computer vision, cognitive science.</p>
+                </article>
+                <article class="person" data-reveal>
+                    <img src="assets/images/team/aesope.jpg" alt="Aesope Hasan">
+                    <h3>Aesope Hasan</h3>
+                    <div class="role">Undergraduate researcher</div>
+                    <p>Computer vision, human–robot interaction, embedded systems.</p>
+                    <div class="links">
+                        <a href="mailto:aesope321@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/Aesope-Hasan" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </article>
+                <article class="person" data-reveal>
+                    <img src="assets/images/team/sabia.jpg" alt="Sabia Sultana Kawsar">
+                    <h3>Sabia Sultana Kawsar</h3>
+                    <div class="role">Undergraduate researcher</div>
+                    <p>Deep learning, few-shot learning, HRI.</p>
+                    <div class="links">
+                        <a href="mailto:sabiasultana05@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/sabiasultana05" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </article>
+                <article class="person" data-reveal>
+                    <img src="assets/images/team/sifat.jpg" alt="Shafayat Ahammed Sifat">
+                    <h3>Shafayat Ahammed Sifat</h3>
+                    <div class="role">Undergraduate researcher</div>
+                    <p>Artificial intelligence and robotics.</p>
+                    <div class="links">
+                        <a href="mailto:shafayatsifat2002@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-                    <!-- Meraj Hossain Promit -->
-                    <div class="bg-card p-5 rounded-lg border border-border-color text-center interactive h-full flex flex-col team-card">
-                        <img src="assets/images/myself.jpg" class="w-24 h-24 rounded-full mx-auto object-cover border-2 border-border-color" alt="Meraj Hossain Promit">
-                        <h4 class="text-lg font-bold text-primary-color mt-3 normal-case">Meraj Hossain Promit</h4>
-                        <p class="text-sm mt-2 flex-grow normal-case">
-                            <strong>Interests:</strong> Deep Reinforcement Learning
-                        </p>
-                        <div class="mt-3 flex justify-center space-x-4 text-lg">
-                            <a href="mailto:merajhossainpromit@gmail.com" class="social-icon">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/mhpromit7473/" target="_blank" class="social-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://github.com/promit7473" target="_blank" class="social-icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
+        <section class="section">
+            <h2 class="section-title">Alumni</h2>
+            <div class="people-grid">
+                <article class="person" data-reveal>
+                    <img src="assets/images/team/tahsin.jpg" alt="Tahsin Tariq Banna">
+                    <h3>Tahsin Tariq Banna</h3>
+                    <div class="role">Alumni · Lecturer, East West University</div>
+                    <p>Computer vision, HRI, graph learning.</p>
+                    <ul class="person-works">
+                        <li><a href="publications.html#beyond-words">Beyond Words</a> · AAMAS 2025</li>
+                        <li><a href="publications.html#gemm">GEMM</a> · IJCNN 2023</li>
+                    </ul>
+                    <div class="links">
+                        <a href="mailto:tahsinbanna@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://tahsintariq.github.io/" target="_blank" rel="noopener" aria-label="Website"><i class="fas fa-globe"></i></a>
+                        <a href="https://github.com/TahsinTariq" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://scholar.google.com/citations?user=7pro7tAAAAAJ" target="_blank" rel="noopener" aria-label="Scholar"><i class="ai ai-google-scholar"></i></a>
                     </div>
-                    
-                    <!-- Tanvir Ahmed -->
-                    <div class="bg-card p-5 rounded-lg border border-border-color text-center interactive h-full flex flex-col team-card">
-                        <img src="https://photos.app.goo.gl/Q5CgrinLFwB6YoTq9" class="w-24 h-24 rounded-full mx-auto object-cover border-2 border-border-color" alt="Tanvir Ahmed">
-                        <h4 class="text-lg font-bold text-primary-color mt-3 normal-case">Tanvir Ahmed</h4>
-                        <p class="text-sm mt-2 flex-grow normal-case">
-                            <strong>Interests:</strong> IoT, HRI, ML, RL, UI, UX, App Development
-                        </p>
-                        <div class="mt-3 flex justify-center space-x-4 text-lg">
-                            <a href="mailto:t.a.prova@gmail.com" class="social-icon">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/tanvir-ahmed-67b5a8199/" target="_blank" class="social-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://github.com/tanvir-a0" target="_blank" class="social-icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
+                </article>
+                <article class="person" data-reveal>
+                    <img src="assets/images/team/utsha-gh.png" alt="Utsha Kumar Roy">
+                    <h3>Utsha Kumar Roy</h3>
+                    <div class="role">Alumni · Lecturer, BRAC University</div>
+                    <p>Robotics, RL, control, computer vision, VLMs.</p>
+                    <ul class="person-works">
+                        <li><a href="publications.html#tnsre-stroke">AI-driven stroke rehabilitation systems</a> · IEEE TNSRE 2022</li>
+                    </ul>
+                    <div class="links">
+                        <a href="mailto:utsha.kumar.roy@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/UK-Roy/UK-Roy" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://scholar.google.com/citations?user=sDRES6QAAAAJ" target="_blank" rel="noopener" aria-label="Scholar"><i class="ai ai-google-scholar"></i></a>
+                        <a href="https://cse.bracu.ac.bd/faculty_profile/441/utsha_kumar_roy" target="_blank" rel="noopener" aria-label="BRAC"><i class="fas fa-university"></i></a>
                     </div>
-                    
-                    <!-- Samin Sadique Aurin -->
-                    <div class="bg-card p-5 rounded-lg border border-border-color text-center interactive h-full flex flex-col team-card">
-                        <img src="https://drive.google.com/file/d/1S_J2KLWm8xmW9xk1KE8r8Ik_89HSvhUh/view?usp=sharing" class="w-24 h-24 rounded-full mx-auto object-cover border-2 border-border-color" alt="Samin Sadique Aurin">
-                        <h4 class="text-lg font-bold text-primary-color mt-3 normal-case">Samin Sadique Aurin</h4>
-                        <p class="text-sm mt-2 flex-grow normal-case">
-                            <strong>Interests:</strong> Deep Learning & AI, Computer Vision, Biomedical Applications, HRI, Embedded Systems
-                        </p>
-                        <div class="mt-3 flex justify-center space-x-4 text-lg">
-                            <a href="mailto:sa.samin1201@gmail.com" class="social-icon">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/samin-sadique-aurin-763341232/" target="_blank" class="social-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://github.com/samin2703" target="_blank" class="social-icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- Shafayat Ahammed Sifat -->
-                    <div class="bg-card p-5 rounded-lg border border-border-color text-center interactive h-full flex flex-col team-card">
-                        <img src="https://placehold.co/150x150/161b22/e6edf3?text=S.A.S" class="w-24 h-24 rounded-full mx-auto object-cover border-2 border-border-color" alt="Shafayat Ahammed Sifat">
-                        <h4 class="text-lg font-bold text-primary-color mt-3 normal-case">Shafayat Ahammed Sifat</h4>
-                        <p class="text-sm mt-2 flex-grow normal-case">
-                            <strong>Interests:</strong> AI, Robotics
-                        </p>
-                        <div class="mt-3 flex justify-center space-x-4 text-lg">
-                            <a href="mailto:shafayatsifat2002@gmail.com" class="social-icon">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    
-                    <!-- Aresha Basir Spriha -->
-                    <div class="bg-card p-5 rounded-lg border border-border-color text-center interactive h-full flex flex-col team-card">
-                        <img src="https://drive.google.com/file/d/1s7vbo19hbIViPGSZxkEWi0r344DrBc7O/view?usp=drive_link" class="w-24 h-24 rounded-full mx-auto object-cover border-2 border-border-color" alt="Aresha Basir Spriha">
-                        <h4 class="text-lg font-bold text-primary-color mt-3 normal-case">Aresha Basir Spriha</h4>
-                        <p class="text-sm mt-2 flex-grow normal-case">
-                            <strong>Interests:</strong> Robotics & Control Systems, AI & ML, Computer Vision & Perception, Cognitive Science & Neural Computation
-                        </p>
-                        <div class="mt-3 flex justify-center space-x-4 text-lg">
-                            <a href="mailto:areshabasirspriha@gmail.com" class="social-icon">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/aresha-basir-spriha-090420300/" target="_blank" class="social-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://github.com/AreshaBasir" target="_blank" class="social-icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Alumni -->
-            <section id="alumni" class="section-divider">
-                <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-accent">//</span> Alumni</h2>
-                <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-                    <!-- Utsha Kumar Roy -->
-                    <div class="bg-card p-5 rounded-lg border border-border-color text-center interactive h-full flex flex-col team-card">
-                        <img src="https://photos.app.goo.gl/1HuJUnPJJdEzHnBj6" class="w-24 h-24 rounded-full mx-auto object-cover border-2 border-border-color" alt="Utsha Kumar Roy">
-                        <h4 class="text-lg font-bold text-primary-color mt-3 normal-case">Utsha Kumar Roy</h4>
-                        <p class="text-sm text-accent-red">Alumni - Lecturer</p>
-                        <p class="text-sm mt-2 flex-grow normal-case">
-                            <strong>Interests:</strong> Robotics, Reinforcement Learning, Control Systems, Computer Vision, Vision Language Model
-                        </p>
-                        <div class="mt-3 flex justify-center space-x-4 text-lg">
-                            <a href="mailto:utsha.kumar.roy@gmail.com" class="social-icon">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/utsha-kumar-roy-2ba547181?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="social-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                            <a href="https://github.com/UK-Roy/UK-Roy" target="_blank" class="social-icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://scholar.google.com/citations?user=sDRES6QAAAAJ&hl=en" target="_blank" class="social-icon">
-                                <i class="ai ai-google-scholar"></i>
-                            </a>
-                            <a href="https://cse.sds.bracu.ac.bd/faculty_profile/441/utsha_kumar_roy#Biography" target="_blank" class="social-icon">
-                                <i class="fas fa-globe"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- Tahsin Tariq Banna -->
-                    <div class="bg-card p-5 rounded-lg border border-border-color text-center interactive h-full flex flex-col team-card">
-                        <img src="https://tahsintariq.github.io/authors/admin/avatar_hu318e47ea0c9997199b098a82eb334f31_8060_270x270_fill_q75_lanczos_center.jpg" class="w-24 h-24 rounded-full mx-auto object-cover border-2 border-border-color" alt="Tahsin Tariq Banna">
-                        <h4 class="text-lg font-bold text-primary-color mt-3 normal-case">Tahsin Tariq Banna</h4>
-                        <p class="text-sm text-accent-red">Alumni - Lecturer</p>
-                        <p class="text-sm mt-2 flex-grow normal-case">
-                            <strong>Interests:</strong> Computer Vision, Robotics, Human Robot Interaction, Deep Learning, Reinforcement Learning, Deep Graph Learning, Computational Geometry, Procedural Arts, Data Viz
-                        </p>
-                        <div class="mt-3 flex justify-center space-x-4 text-lg">
-                            <a href="mailto:tahsin.banna@ewubd.edu" class="social-icon">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="https://tahsintariq.github.io/" target="_blank" class="social-icon">
-                                <i class="fas fa-globe"></i>
-                            </a>
-                            <a href="https://github.com/TahsinTariq" target="_blank" class="social-icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://scholar.google.com/citations?user=7pro7tAAAAAJ&hl=en" target="_blank" class="social-icon">
-                                <i class="ai ai-google-scholar"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Webmaster Section -->
-            <section id="webmaster" class="section-divider">
-                <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-accent">//</span> Webmaster</h2>
-                <div class="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-8">
-                    <!-- Promit -->
-                    <div class="bg-card p-6 rounded-lg border border-border-color text-center interactive h-full flex flex-col team-card">
-                        <img src="assets/images/myself.jpg" class="w-24 h-24 rounded-full mx-auto object-cover border-2 border-border-color" alt="Promit">
-                        <h4 class="text-lg font-bold text-primary-color mt-3 normal-case">Promit</h4>
-                        <p class="text-sm text-accent-red">Webmaster</p>
-                        <p class="text-sm mt-2 flex-grow normal-case">
-                            <strong>Responsibilities:</strong> Website maintenance, UI/UX design, Full-stack development
-                        </p>
-                        <div class="mt-3 flex justify-center space-x-4 text-lg">
-                            <a href="mailto:merajhossainpromit@gmail.com" class="social-icon">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="https://github.com/promit7473" target="_blank" class="social-icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://linkedin.com/in/mhpromit7473" target="_blank" class="social-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- Spriha -->
-                    <div class="bg-card p-6 rounded-lg border border-border-color text-center interactive h-full flex flex-col team-card">
-                        <img src="https://placehold.co/150x150/161b22/e6edf3?text=Spriha" class="w-24 h-24 rounded-full mx-auto object-cover border-2 border-border-color" alt="Spriha">
-                        <h4 class="text-lg font-bold text-primary-color mt-3 normal-case">Spriha</h4>
-                        <p class="text-sm text-accent-red">Webmaster</p>
-                        <p class="text-sm mt-2 flex-grow normal-case">
-                            <strong>Responsibilities:</strong> Content management, Frontend development, Design optimization
-                        </p>
-                        <div class="mt-3 flex justify-center space-x-4 text-lg">
-                            <a href="mailto:spriha@example.com" class="social-icon">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="https://github.com/spriha" target="_blank" class="social-icon">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://linkedin.com/in/spriha" target="_blank" class="social-icon">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-
-        <footer class="text-center py-8 border-t border-border-color">
-            <p class="text-sm">&copy; <span id="current-year"></span> MARVEL Lab. All Rights Reserved.</p>
-            <p class="text-xs mt-1">Last Transmission: <span id="current-time"></span></p>
-        </footer>
-    </div>
-
-    <!-- Custom Cursor Elements -->
-    <div id="cursor-dot"></div>
-    <div id="cursor-outline"></div>
-
-    <!-- Custom JavaScript -->
-    <script src="assets/js/main.js"></script>
+                </article>
+            </div>
+        </section>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="components.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

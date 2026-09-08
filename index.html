@@ -1,195 +1,199 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth" data-theme="dark">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script>(function(){try{var t=localStorage.getItem("theme");if(t!=="dark"&&t!=="light"){t=(window.matchMedia&&window.matchMedia("(prefers-color-scheme:dark)").matches)?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <center><title>MARVEL Lab | Pioneering Intelligent Systems</title></center>
-    
-    <!-- Meta Information -->
-    <link rel="icon" href="https://placehold.co/32x32/0d1117/e6edf3?text=CRL" type="image/x-icon">
-    <meta name="description" content="The MARVEL Lab is a collective of researchers and engineers dedicated to advancing the frontiers of AI, Machine Learning, Computer Vision, and Healthcare AI.">
-    <meta name="keywords" content="Cognitive Robotics, AI, Machine Learning, Deep Learning, Reinforcement Learning, Computer Vision, Healthcare AI, Research Lab, Autonomous Systems">
+    <title>MARVEL Lab · University of Dhaka</title>
+    <meta name="description" content="MARVEL Lab at the University of Dhaka: multimodal AI, robotics, vision, embodied learning, and robot learning. Directed by Dr. Sejuti Rahman.">
 
-    <!-- External Dependencies -->
-    <script src="https://cdn.tailwindcss.com"></script>
+
+    <meta name="robots" content="index,follow">
+    <meta name="author" content="MARVEL Lab, University of Dhaka">
+    <meta name="keywords" content="MARVEL Lab, Sejuti Rahman, University of Dhaka, robotics, medical AI, computer vision, embodied learning, robot learning, IROS 2026">
+    <meta name="theme-color" content="#2f5ea8">
+    <link rel="canonical" href="https://marvel-lab-du.github.io/">
+    <link rel="icon" type="image/svg+xml" href="assets/logo/mark-e.svg">
+    <link rel="icon" type="image/png" href="assets/logo/favicon.png">
+    <link rel="apple-touch-icon" href="assets/logo/favicon.png">
+    <meta property="og:site_name" content="MARVEL Lab">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marvel-lab-du.github.io/">
+    <meta property="og:title" content="MARVEL Lab · University of Dhaka">
+    <meta property="og:description" content="MARVEL Lab at the University of Dhaka: multimodal AI, robotics, vision, embodied learning, and robot learning. Directed by Dr. Sejuti Rahman.">
+    <meta property="og:image" content="https://marvel-lab-du.github.io/assets/logo/og.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="MARVEL Lab · University of Dhaka">
+    <meta name="twitter:description" content="MARVEL Lab at the University of Dhaka: multimodal AI, robotics, vision, embodied learning, and robot learning. Directed by Dr. Sejuti Rahman.">
+    <meta name="twitter:image" content="https://marvel-lab-du.github.io/assets/logo/og.png">
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"ResearchOrganization","name":"MARVEL Lab","alternateName":"Multimodal AI, Robotics, Vision, Embodied Learning and Robot Learning","url":"https://marvel-lab-du.github.io/","logo":"https://marvel-lab-du.github.io/assets/logo/favicon.png","email":"sejuti@gmail.com","parentOrganization":{"@type":"CollegeOrUniversity","name":"University of Dhaka","department":"Department of Robotics and Mechatronics Engineering"},"founder":{"@type":"Person","name":"Sejuti Rahman","jobTitle":"Principal Investigator","sameAs":["https://scholar.google.com/citations?user=j8XhiIEAAAAJ","https://www.researchgate.net/profile/Sejuti-Rahman","https://www.du.ac.bd/faculty/faculty_details/RME/2150"]},"address":{"@type":"PostalAddress","addressLocality":"Dhaka","addressCountry":"BD"}}
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    
-    <!-- Custom Styles -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="styles.css?v=20260909q">
 </head>
+<body>
+    <div id="nav-placeholder"></div>
 
-<body class="antialiased">
-
-    <!-- Signature Logo -->
-    <a href="index.html">
-        <img src="assets/images/logo.png" alt="Lab Logo" id="signature-logo" class="interactive">
-    </a>
-    
-    <!-- Theme Toggle Button -->
-    <button id="theme-toggle" class="hover:text-accent-red transition-colors duration-200 text-2xl focus:outline-none interactive">
-        <!-- Icon is set by JS -->
-    </button>
-
-    <!-- Main Content -->
-    <div id="main-content">
-        <!-- Header with Dynamic Background -->
-        <header class="hero-bg min-h-screen flex items-center justify-center text-center p-8 overflow-hidden">
-            <!-- Background Video -->
-            <!-- <video autoplay loop muted playsinline class="hero-background-video">
-                <source src="assets/videos/homepage_heading_video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video> -->
-
-            <!-- Overlay for text readability -->
-            <div class="hero-overlay"></div>
-
-            <!-- Content -->
-            <div class="hero-content">
-                <h1 class="text-3xl md:text-5xl font-bold tracking-wider mb-4">MARVEL Lab</h1>
-                <p class="text-xl md:text-2xl font-['Roboto_Mono'] normal-case">
-                    Engineering the Next Frontier of <span id="toggling-title">Artificial Intelligence</span>
-                </p>
-                <p class="mt-4 max-w-2xl mx-auto text-lg font-['Roboto_Mono'] normal-case">
-                    We build intelligent, autonomous systems that solve complex real-world problems in healthcare, robotics, and beyond.
-                </p>
-                <div class="mt-8">
-                    <a href="research.html" class="glow-button py-3 px-8 rounded-md font-bold uppercase tracking-wider">
-                        Explore Research
-                    </a>
+    <main>
+      <div class="wrap-wide">
+        <header class="lab-hero">
+            <div>
+                <h1 class="wordmark wordmark-hero" aria-label="MARVEL Lab">
+                    <svg class="wm-marvel-svg" viewBox="0 0 445 80" fill="currentColor" aria-hidden="true"><polygon points="0,76 0,4 13,4 40,74.5 67,4 80,4 80,76 67,76 67,37.8 45.46,76 34.54,76 13,37.8 13,76"/><polygon points="97,76 133,1.6 169,76 153.4,76 133,30.2 112.6,76"/><path fill-rule="evenodd" d="M182,76 L182,4 H216 V37.12 H195 V76 Z M195,17 H203 V24.12 H195 Z"/><polygon points="200,24.12 203,24.12 240,76 224.4,76"/><polygon points="255,4 270.6,4 291,49.8 311.4,4 327,4 291,78.4"/><rect x="340" y="4" width="44" height="13"/><rect x="340" y="33.5" width="44" height="13"/><rect x="340" y="63" width="44" height="13"/><polygon points="399,4 412,4 412,63 445,63 445,76 399,76"/></svg>
+                    <span class="wm-lab">LAB</span>
+                </h1>
+                <div class="expand">Multimodal AI · Robotics · Vision · Embodied Learning · Robot Learning</div>
+                <div class="affil">
+                    Department of Robotics and Mechatronics Engineering, University of Dhaka<br>
+                    Directed by Dr. Sejuti Rahman
+                </div>
+                <div class="links-row">
+                    <a class="link-chip" href="mailto:sejuti@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                    <a class="link-chip" href="https://scholar.google.com/citations?user=j8XhiIEAAAAJ" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i> Scholar</a>
+                    <a class="link-chip" href="https://www.researchgate.net/profile/Sejuti-Rahman" target="_blank" rel="noopener"><i class="ai ai-researchgate"></i> ResearchGate</a>
+                    <a class="link-chip" href="https://www.du.ac.bd/faculty/faculty_details/RME/2150" target="_blank" rel="noopener"><i class="fas fa-university"></i> DU profile</a>
+                    <a class="link-chip" href="publications.html"><i class="fas fa-book"></i> Papers</a>
                 </div>
             </div>
         </header>
+      </div>
 
-        <main class="container">
-            <!-- Navigation Bar Wrapper -->
-            <div id="nav-wrapper" class="sticky top-0 z-50 py-4 mb-10">
-                <nav class="max-w-5xl mx-auto bg-card/85 backdrop-blur-md rounded-lg border border-border-color shadow-md">
-                    <div class="max-w-7xl mx-auto px-4">
-                        <div class="flex justify-center items-center">
-                            <!-- Desktop Menu -->
-                            <div class="hidden md:flex items-center">
-                                <ul class="flex items-center space-x-4 lg:space-x-6 text-sm py-2">
-                                    <li><a href="index.html" class="text-primary-color font-bold transition-colors duration-200">Home</a></li>
-                                    <li><a href="research.html" class="hover:text-primary-color transition-colors duration-200">Research</a></li>
-                                    <li><a href="projects.html" class="hover:text-primary-color transition-colors duration-200">Projects</a></li>
-                                    <li><a href="publications.html" class="hover:text-primary-color transition-colors duration-200">Publications</a></li>
-                                    <li><a href="team.html" class="hover:text-primary-color transition-colors duration-200">Team</a></li>
-                                    <li><a href="contact.html" class="hover:text-primary-color transition-colors duration-200">Contact</a></li>
-                                </ul>
-                            </div>
-
-                            <!-- Mobile Menu Button -->
-                            <div class="md:hidden flex items-center w-full justify-center py-2">
-                                <button id="mobile-menu-button" class="hover:text-accent-red transition-colors duration-200 text-2xl focus:outline-none">
-                                    <i class="fas fa-bars"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Mobile Menu -->
-                    <div id="mobile-menu" class="hidden md:hidden">
-                        <ul class="flex flex-col items-center space-y-4 py-4 border-t border-border-color">
-                           <li><a href="index.html" class="hover:text-primary-color transition-colors duration-200">Home</a></li>
-                           <li><a href="research.html" class="hover:text-primary-color transition-colors duration-200">Research</a></li>
-                           <li><a href="projects.html" class="hover:text-primary-color transition-colors duration-200">Projects</a></li>
-                           <li><a href="publications.html" class="hover:text-primary-color transition-colors duration-200">Publications</a></li>
-                           <li><a href="team.html" class="hover:text-primary-color transition-colors duration-200">Team</a></li>
-                           <li><a href="contact.html" class="hover:text-primary-color transition-colors duration-200">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
+      <section class="section" style="border-top:1px solid var(--border)">
+        <div class="wrap-wide">
+            <h2 class="section-title">About</h2>
+            <div class="about-copy">
+                <p>
+                    MARVEL Lab is a research group in the Department of Robotics and Mechatronics Engineering at the University of Dhaka, directed by Dr. Sejuti Rahman. The lab builds learning systems that see, reason, and act: medical AI for rehabilitation and neurodevelopmental screening, graph models of human motion, sign-language robots, 3D and hyperspectral vision, and robot learning under uncertain physical contact.
+                </p>
+                <p>
+                    Work sits at the intersection of computer vision, robotics, and healthcare. Students and alumni have published in IEEE TNSRE, AAAI, AAMAS, PLOS ONE, Pattern Recognition Letters, and related venues. This year planetary-mobility work from the lab was accepted at the IROS 2026 Space Robotics Workshop.
+                </p>
             </div>
+        </div>
+      </section>
 
-            <!-- Lab Mission Section -->
-            <section id="mission" class="section-divider">
-                <h2 class="text-3xl font-bold mb-8 text-center"><span class="text-accent">//</span> Our Mission</h2>
-                <div class="max-w-5xl mx-auto text-lg text-center">
-                    <p class="mb-4 font-['Roboto_Mono'] normal-case">
-                        Our lab is dedicated to pioneering fundamental research in artificial intelligence and translating our discoveries into impactful real-world applications. We focus on creating robust, explainable, and ethical AI systems to tackle grand challenges in science, healthcare, and autonomous systems, fostering an open and collaborative research environment.
-                    </p>
-                </div>
-            </section>
-            
-            <!-- Research Areas Section -->
-            <section id="research-areas" class="section-divider">
-                <h2 class="text-3xl font-bold mb-12 text-center"><span class="text-accent">//</span> Core Research Areas</h2>
-                <div class="max-w-5xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
-                    <!-- Area 1 -->
-                    <div class="bg-card p-6 rounded-lg border border-transparent hover:border-accent-red transition-colors duration-300 interactive">
-                        <i class="fas fa-brain text-4xl text-accent-red mb-4"></i>
-                        <h3 class="text-xl mb-2 normal-case">Deep Learning</h3>
-                        <p class="text-sm normal-case">Developing novel architectures and training methodologies for complex pattern recognition tasks.</p>
-                    </div>
-                    <!-- Area 2 -->
-                    <div class="bg-card p-6 rounded-lg border border-transparent hover:border-accent-red transition-colors duration-300 interactive">
-                        <i class="fas fa-robot text-4xl text-accent-red mb-4"></i>
-                        <h3 class="text-xl mb-2 normal-case">Reinforcement Learning</h3>
-                        <p class="text-sm normal-case">Creating agents that learn optimal behaviors through interaction and feedback in dynamic environments.</p>
-                    </div>
-                    <!-- Area 3 -->
-                    <div class="bg-card p-6 rounded-lg border border-transparent hover:border-accent-red transition-colors duration-300 interactive">
-                        <i class="fas fa-eye text-4xl text-accent-red mb-4"></i>
-                        <h3 class="text-xl mb-2 normal-case">Computer Vision</h3>
-                        <p class="text-sm normal-case">Enabling machines to interpret and understand visual information from the world.</p>
-                    </div>
-                </div>
-                <div class="text-center mt-12">
-                    <a href="research.html" class="glow-button py-3 px-8 rounded-md font-bold uppercase tracking-wider inline-flex items-center justify-center transition-all duration-300 text-lg group">
-                        <i class="fas fa-chevron-right mr-3"></i> Dive Deeper
-                    </a>
-                </div>
-            </section>
+      <div class="wrap-wide">
+        <section class="section">
+            <h2 class="section-title">News</h2>
+            <ul class="news">
+                <li><span class="date">Sep 2026</span><span class="item"><span class="flag">accepted</span> <em>Escape Without a Recipe: Maneuver-Agnostic Mars Rover Recovery from Granular Entrapment</em> accepted at the <a href="https://space-robots.org/iros2026/">IROS 2026 Space Robotics Workshop</a> (Pittsburgh, 27 Sep). With Meraj Hossain Promit, Chandak Chakma, and Md. Jubair Ahmed Sourov.</span></li>
+                <li><span class="date">2025</span><span class="item">Dr. Rahman received the Dhaka University Research Excellence Award.</span></li>
+                <li><span class="date">2025</span><span class="item"><em>SignFormer-GCN</em> in PLOS ONE; <em>ReKon3D</em> in Neurocomputing; <em>Beyond Words</em> at AAMAS 2025.</span></li>
+                <li><span class="date">2024</span><span class="item"><em>SEA-GWNN</em> accepted at AAAI 2024 (CORE A*).</span></li>
+                <li><span class="date">2022–present</span><span class="item">Dr. Rahman is Associate Professor (and former Chairperson) of Robotics and Mechatronics Engineering at the University of Dhaka, and currently Professor of Computer Science at New Uzbekistan University, on study leave from DU.</span></li>
+            </ul>
+        </section>
 
-            <!-- Featured Projects Section -->
-            <section id="projects" class="py-10">
-                <h2 class="text-3xl font-bold mb-8 text-center"><span class="text-accent">//</span> Featured Projects</h2>
-                <div class="max-w-5xl mx-auto grid sm:grid-cols-1 lg:grid-cols-2 gap-8">
-                    <!-- Project 1 -->
-                    <div class="project-card bg-card p-6 rounded-lg interactive">
-                        <img src="assets/images/cancer.gif" alt="Deep RL Agent GIF" class="rounded-md mb-4 w-full h-48 object-cover" loading="lazy">
-                        <div class="project-content">
-                            <h3 class="text-xl mb-2 normal-case">AI for Medical Imaging</h3>
-                            <p class="mb-4 text-sm project-description normal-case">
-                                Developing a deep learning model for early-stage cancer detection in medical scans, aiming to improve diagnostic accuracy and patient outcomes.
-                            </p>
-                            <a href="projects.html" class="text-accent-red hover:underline mt-auto font-bold">
-                                Learn More <i class="fas fa-arrow-right ml-1 text-xs"></i>
-                            </a>
+        <section class="section">
+            <h2 class="section-title">Featured work</h2>
+            <div class="card-grid">
+                <article class="card" data-reveal>
+                    <div class="card-media"><img src="assets/images/research/rehab-gcn.jpg" alt="Graph model of a rehabilitation exercise"></div>
+                    <div class="card-body">
+                        <h3>AI-driven Stroke Rehabilitation Systems and Assessment: A Systematic Review</h3>
+                        <p><span class="me">S Rahman</span>, S Sarker, AKMN Haque, MM Uttsha, MF Islam, S Deb</p>
+                        <p><em>IEEE TNSRE</em>, 2022 · cited by 116 <span class="q1">Q1</span></p>
+                        <div class="card-foot"><a href="https://doi.org/10.1109/TNSRE.2022.3208887" target="_blank" rel="noopener">DOI</a></div>
+                    </div>
+                </article>
+                <article class="card" data-reveal>
+                    <div class="card-media"><img src="assets/images/papers/tnsre-01.png" alt="IEEE TNSRE GCN paper"></div>
+                    <div class="card-body">
+                        <h3>Graph convolutional networks for assessment of physical rehabilitation exercises</h3>
+                        <p>S Deb, MF Islam, S Rahman, <span class="me">S Rahman</span></p>
+                        <p><em>IEEE TNSRE</em> 30, 2022 · cited by 112 <span class="q1">Q1</span></p>
+                        <div class="card-foot"><a href="https://doi.org/10.1109/TNSRE.2022.3150392" target="_blank" rel="noopener">DOI</a></div>
+                    </div>
+                </article>
+                <article class="card" data-reveal>
+                    <div class="card-media"><img src="assets/images/papers/signformer-gcn.jpg" alt="SignFormer-GCN architecture overview"></div>
+                    <div class="card-body">
+                        <h3>SignFormer-GCN: Continuous sign language translation using spatio-temporal graph convolutional networks</h3>
+                        <p>SH Arib, R Akter, S Rahman, <span class="me">S Rahman</span></p>
+                        <p><em>PLOS ONE</em>, 2025 · cited by 18 <span class="q1">Q1</span></p>
+                        <div class="card-foot">
+                            <a href="https://doi.org/10.1371/journal.pone.0316298" target="_blank" rel="noopener">DOI</a>
+                            <a href="https://github.com/rabeya-akter/SignLanguageTranslation" target="_blank" rel="noopener">Code</a>
                         </div>
                     </div>
-                    <!-- Project 2 -->
-                    <div class="project-card bg-card p-6 rounded-lg interactive">
-                         <img src="assets/images/Skydio-X2-Ruggedized-Drone.gif" alt="Isaac Sim GIF" class="rounded-md mb-4 w-full h-48 object-cover" loading="lazy">
-                        <div class="project-content">
-                            <h3 class="text-xl mb-2 normal-case">Autonomous Drone Navigation</h3>
-                            <p class="mb-4 text-sm project-description normal-case">
-                                Training autonomous drones using Deep Reinforcement Learning in photorealistic simulations to navigate complex, GPS-denied environments.
-                            </p>
-                            <a href="projects.html" class="text-accent-red hover:underline mt-auto font-bold">
-                                Learn More <i class="fas fa-arrow-right ml-1 text-xs"></i>
-                            </a>
-                        </div>
+                </article>
+                <article class="card" data-reveal>
+                    <div class="card-media"><img src="assets/images/papers/seagwnn-1.png" alt="SEA-GWNN paper"></div>
+                    <div class="card-body">
+                        <h3>SEA-GWNN: Simple and Effective Adaptive Graph Wavelet Neural Network</h3>
+                        <p>S Deb, S Rahman, <span class="me">S Rahman</span></p>
+                        <p><em>AAAI</em> 2024 · cited by 12</p>
+                        <div class="card-foot"><a href="https://ojs.aaai.org/index.php/AAAI/article/view/29057" target="_blank" rel="noopener">AAAI</a></div>
                     </div>
-                </div>
-            </section>
-        </main>
+                </article>
+            </div>
+            <p style="margin-top:18px"><a href="publications.html">All publications →</a></p>
+        </section>
 
-        <footer class="text-center py-8 border-t border-border-color">
-            <p class="text-sm">&copy; <span id="current-year"></span> MARVEL Lab. All Rights Reserved.</p>
-            <p class="text-xs mt-1">Last Transmission: <span id="current-time"></span></p>
-        </footer>
-    </div>
+        <section class="section">
+            <h2 class="section-title">Research areas</h2>
+            <div class="card-grid">
+                <article class="card" data-reveal>
+                    <div class="card-media"><img src="assets/images/research/rehab-gcn.jpg" alt="Stroke rehabilitation assessment"></div>
+                    <div class="card-body">
+                        <h3>Medical AI and rehabilitation</h3>
+                        <p>Graph models of exercise quality, stroke rehab assessment, autism screening from activity, and imaging-based diagnosis. Two IEEE TNSRE papers account for more than 200 citations.</p>
+                        <div class="card-foot"><span class="tag-metric">TNSRE · GCN · healthcare</span></div>
+                    </div>
+                </article>
+                <article class="card" data-reveal>
+                    <div class="card-media"><img src="assets/images/research/sign-language.jpg" alt="Sign language and HRI"></div>
+                    <div class="card-body">
+                        <h3>HRI and sign language</h3>
+                        <p>Continuous Bangla sign translation, a low-cost humanoid interpreter, and personality-aware gesture generation on social robots.</p>
+                        <div class="card-foot"><span class="tag-metric">SLT · AAMAS · humanoids</span></div>
+                    </div>
+                </article>
+                <article class="card" data-reveal>
+                    <div class="card-media"><img src="assets/images/papers/seagwnn-1.png" alt="Graph wavelet neural network"></div>
+                    <div class="card-body">
+                        <h3>Graph neural networks</h3>
+                        <p>Adaptive graph wavelets (AAAI 2024), rehab scoring, sign skeletons, and image memorability — the same joint-as-graph bias across domains.</p>
+                        <div class="card-foot"><span class="tag-metric">AAAI · wavelets · skeletons</span></div>
+                    </div>
+                </article>
+                <article class="card" data-reveal>
+                    <div class="card-media"><img src="assets/images/research/hyperspectral.jpg" alt="Hyperspectral imaging and 3D shape"></div>
+                    <div class="card-body">
+                        <h3>Vision, spectra, and 3D</h3>
+                        <p>Shape, reflectance, and illumination from a single multispectral view; zero-shot 3D recognition; eye-tracking; visual SLAM.</p>
+                        <div class="card-foot"><span class="tag-metric">IEEE TCI · ACCV · 3D</span></div>
+                    </div>
+                </article>
+                <article class="card" data-reveal>
+                    <div class="card-media"><img src="assets/images/papers/access-01.png" alt="Applied language and imaging"></div>
+                    <div class="card-body">
+                        <h3>Language and applied imaging</h3>
+                        <p>Code-mixed Bangla–English sentiment, on-site microplastic detection, and stereoscopic video quality with collaborators outside the rehab line.</p>
+                        <div class="card-foot"><span class="tag-metric">NLP · sensing · quality</span></div>
+                    </div>
+                </article>
+                <article class="card" data-reveal>
+                    <div class="card-media"><img src="assets/images/research/rocker-bogie.jpg" alt="Rocker-bogie rover schematic"></div>
+                    <div class="card-body">
+                        <h3>Robot learning</h3>
+                        <p>Contact-rich control, including rover recovery from granular entrapment without a fixed maneuver catalog, and Sim2Real transfer.</p>
+                        <div class="card-foot"><span class="tag-metric">RL · Sim2Real · contact</span></div>
+                    </div>
+                </article>
+            </div>
+            <p style="margin-top:18px"><a href="research.html">Research in more detail →</a></p>
+        </section>
+      </div>
+    </main>
 
-    <!-- Custom Cursor Elements -->
-    <div id="cursor-dot"></div>
-    <div id="cursor-outline"></div>
-
-    <!-- Custom JavaScript -->
-    <script src="assets/js/main.js"></script>
+    <div id="footer-placeholder"></div>
+    <script src="components.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
