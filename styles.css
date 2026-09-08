@@ -743,7 +743,7 @@ main .lab-hero .affil {
 }
 .person-works li { margin-bottom: 4px; }
 .person-works a { font-weight: 500; }
-.person .links { display: flex; gap: 10px; margin-top: 10px; }
+.person .links { display: flex; justify-content: center; gap: 10px; margin-top: 10px; }
 .person .links a { color: var(--text-muted); font-size: 0.95rem; }
 .person .links a:hover { color: var(--accent); text-decoration: none; }
 
