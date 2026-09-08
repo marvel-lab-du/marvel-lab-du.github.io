@@ -2,10 +2,10 @@
 
 (function () {
 
-    const WORDMARK_SVG = '<svg class="wm-marvel-svg" viewBox="0 0 599 62" fill="currentColor" aria-hidden="true"><polygon points="0,0 32,0 54.5,56 77,0 109,0 109,62 87,62 87,26 59,62 50,62 22,26 22,62 0,62"/><polygon points="116,62 165,0 214,62 190,62 165,38.9 140,62"/><path fill-rule="evenodd" d="M221,62 L221,0 H291 V32 H243 V62 Z M243,14 H273 V26 H243 Z"/><polygon points="247,24 281,24 311,62 289,62"/><polygon points="316,0 340,0 361,23.1 382,0 406,0 361,62"/><polygon points="425,0 505,0 505,17 425,17"/><polygon points="425,23 505,23 505,39 425,39"/><polygon points="425,45 505,45 505,62 425,62"/><polygon points="526,0 548,0 548,45 599,45 599,62 526,62"/></svg>';
+    const LOGO_IMG = '<img class="brand-logo" src="assets/logo/Logo.png" alt="" width="918" height="204">';
 
     function wordmarkHtml() {
-        return WORDMARK_SVG + '<span class="wm-lab">LAB</span>';
+        return LOGO_IMG;
     }
 
     function getActivePage() {
