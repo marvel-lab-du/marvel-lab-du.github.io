@@ -3,7 +3,7 @@
    Design system adapted from promit7473.github.io
    Wordmark: geometric MARVEL + tracked LAB (original mark)
    ========================================================= */
-@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Saira:wght@300;400&display=swap");
 
 
 :root {
@@ -170,26 +170,26 @@ section { padding: 0; }
 .wordmark {
     display: inline-flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     color: inherit;
     line-height: 1;
     text-decoration: none;
 }
 .wm-marvel-svg {
     display: block;
-    width: 148px;
+    width: 152px;
     height: auto;
     fill: currentColor;
     overflow: visible;
 }
 .wm-lab {
-    font-family: "Michroma", "IBM Plex Sans", sans-serif;
-    font-size: 0.5rem;
-    font-weight: 400;
-    letter-spacing: 0.62em;
+    font-family: "Saira", "IBM Plex Sans", sans-serif;
+    font-size: 0.52rem;
+    font-weight: 300;
+    letter-spacing: 0.82em;
     text-transform: uppercase;
-    margin-top: 5px;
-    padding-left: 1px;
+    margin-top: 6px;
+    padding-left: 0.82em;
     color: var(--text-muted);
 }
 .nav-brand.wordmark { gap: 0; margin-right: auto; }
@@ -197,18 +197,19 @@ section { padding: 0; }
     align-items: center;
 }
 .wordmark-hero .wm-marvel-svg {
-    width: min(440px, 88vw);
+    width: min(520px, 90vw);
     height: auto;
 }
 .wordmark-hero .wm-lab {
-    font-size: clamp(0.72rem, 1.4vw, 0.92rem);
-    letter-spacing: 0.88em;
-    margin-top: 10px;
-    padding-left: 0.2em;
+    font-size: clamp(0.85rem, 2vw, 1.15rem);
+    font-weight: 300;
+    letter-spacing: 0.92em;
+    margin-top: 18px;
+    padding-left: 0.92em;
     color: var(--text-muted);
 }
-.footer-brand.wordmark .wm-marvel-svg { width: 128px; }
-.footer-brand.wordmark .wm-lab { font-size: 0.46rem; letter-spacing: 0.58em; }
+.footer-brand.wordmark .wm-marvel-svg { width: 132px; }
+.footer-brand.wordmark .wm-lab { font-size: 0.48rem; letter-spacing: 0.82em; padding-left: 0.82em; }
 .nav-links {
     display: flex;
     gap: 22px;
