@@ -2,7 +2,7 @@
 
 (function () {
 
-    const LOGO_IMG = '<img class="brand-logo" src="assets/logo/Logo.png" alt="" width="1586" height="311" role="img" aria-label="MARVEL Lab">';
+    const LOGO_IMG = '<img class="brand-logo" src="assets/logo/logo.png" alt="" width="2172" height="724" role="img" aria-label="MARVEL Lab">';
 
     function wordmarkHtml() {
         return LOGO_IMG;
