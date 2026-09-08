@@ -30,32 +30,9 @@
     --nav-bg: rgba(255, 255, 255, 0.86);
 }
 
-:root[data-theme="dark"] {
-    --bg:            #0f1216;
-    --bg-soft:       #161a20;
-    --surface:       #161a20;
-    --text:          #e7e6e2;
-    --text-muted:    #a6a59f;
-    --text-faint:    #6f6e69;
-    --border:        #262b33;
-    --border-strong: #353b45;
-    --accent:        #7ea6e6;
-    --accent-hover:  #a3c1f2;
-    --accent-soft:   rgba(126, 166, 230, 0.14);
-
-    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
-    --shadow-md: 0 6px 24px rgba(0, 0, 0, 0.5);
-
-    --nav-bg: rgba(15, 18, 22, 0.86);
-}
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { color-scheme: light dark; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; scroll-padding-top: 72px; }
-
-:root[data-theme="dark"] .pub-thumb--ph { background: linear-gradient(160deg, #1c212a, #12151b); }
-:root[data-theme="dark"] .filter-btn.active,
-:root[data-theme="dark"] .btn { color: #0f1216; }
+html { color-scheme: light; scroll-behavior: smooth; -webkit-text-size-adjust: 100%; scroll-padding-top: 72px; }
 
 body {
     font-family: var(--font-sans);
@@ -177,7 +154,6 @@ section { padding: 0; }
     height: auto;
 }
 .footer-brand.wordmark .brand-logo { width: 132px; }
-:root[data-theme="dark"] .brand-logo { content: url("assets/logo/Logo-dark.svg"); }
 .nav-links {
     display: flex;
     gap: 22px;
@@ -207,19 +183,6 @@ section { padding: 0; }
     color: var(--text);
     cursor: pointer;
 }
-.theme-toggle {
-    background: none;
-    border: none;
-    font-size: 1rem;
-    color: var(--text-muted);
-    cursor: pointer;
-    padding: 6px;
-    margin-left: 4px;
-    line-height: 1;
-    border-radius: 8px;
-    transition: color 0.15s ease, background 0.15s ease;
-}
-.theme-toggle:hover { color: var(--accent); background: var(--accent-soft); }
 #mobile-menu {
     display: none;
     border-bottom: 1px solid var(--border);
@@ -311,10 +274,6 @@ section { padding: 0; }
     opacity: 0.14;
     z-index: -1;
     filter: grayscale(0.2) saturate(0.8);
-}
-:root[data-theme="dark"] .about-band .about-bg {
-    opacity: 0.12;
-    filter: grayscale(0.3) saturate(0.75) brightness(0.65);
 }
 .about-band::after {
     content: "";
@@ -858,7 +817,6 @@ main .lab-hero .affil {
     height: 280px;
 }
 .map-wrap iframe { width: 100%; height: 100%; border: 0; filter: grayscale(0.35); }
-:root[data-theme="dark"] .map-wrap iframe { filter: grayscale(1) invert(0.88) contrast(0.9); }
 
 .callout {
     background: var(--accent-soft);
