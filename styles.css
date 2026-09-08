@@ -156,13 +156,6 @@ section { padding: 0; }
     letter-spacing: -0.02em;
 }
 .nav-brand:hover { color: var(--text); text-decoration: none; }
-.nav-brand img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    object-fit: cover;
-    background: #fff;
-}
 
 .wordmark {
     display: inline-flex;
@@ -184,7 +177,7 @@ section { padding: 0; }
     height: auto;
 }
 .footer-brand.wordmark .brand-logo { width: 132px; }
-:root[data-theme="dark"] .brand-logo { filter: invert(1); }
+:root[data-theme="dark"] .brand-logo { content: url("assets/logo/Logo-dark.png"); }
 .nav-links {
     display: flex;
     gap: 22px;
